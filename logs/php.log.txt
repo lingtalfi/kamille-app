@@ -1,0 +1,90 @@
+[01-Mar-2018 13:30:37 Europe/Paris] PHP Fatal error:  Class 'Logger\Logger' not found in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-modules/Core/ApplicationHandler/WebApplicationHandler.php on line 52
+[01-Mar-2018 13:30:43 Europe/Paris] PHP Fatal error:  Class 'Module\ThisApp\Ekom\Helper\HooksHelper' not found in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-core/Services/Hooks.php on line 817
+[01-Mar-2018 13:34:39 Europe/Paris] PHP Fatal error:  Class 'QuickPdo\QuickPdo' not found in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-modules/Core/Pdo/QuickPdoInitializer.php on line 29
+[01-Mar-2018 13:34:49 Europe/Paris] PHP Fatal error:  Class 'Authenticate\SessionUser\SessionUser' not found in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-modules/Core/ApplicationHandler/WebApplicationHandler.php on line 194
+[01-Mar-2018 13:35:04 Europe/Paris] PHP Fatal error:  Class 'Controller\Ekom\Front\HomeController' not found in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-modules/Core/ApplicationHandler/WebApplicationHandler.php on line 129
+[01-Mar-2018 14:11:10 Europe/Paris] PHP Fatal error:  Class 'Controller\Core\ExceptionController' not found in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-modules/Core/ApplicationHandler/WebApplicationHandler.php on line 129
+[01-Mar-2018 14:11:32 Europe/Paris] PHP Fatal error:  Uncaught exception 'Kamille\Utils\Laws\Exception\LawsUtilException' with message 'laws config file not found with viewId Core/exception (/Volumes/Macintosh HD 2/web/php/projects/kamille-app/config/laws/Core/exception.conf.php)' in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Utils/Laws/LawsUtil.php:107
+Stack trace:
+#0 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-modules/Core/Utils/Laws/LawsViewRenderer.php(95): Kamille\Utils\Laws\LawsUtil->renderLawsViewById('Core/exception', Object(Kamille\Utils\Laws\Config\LawsConfig), Array)
+#1 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-core/Controller/ApplicationController.php(57): Module\Core\Utils\Laws\LawsViewRenderer->renderByViewId('Core/exception', Object(Kamille\Utils\Laws\Config\LawsConfig), Array)
+#2 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-controllers/Core/ExceptionController.php(33): Core\Controller\ApplicationController->renderByViewId('Core/exception', Object(Kamille\Utils\Laws\Config\Law in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Utils/Laws/LawsUtil.php on line 107
+[01-Mar-2018 14:12:02 Europe/Paris] PHP Fatal error:  Uncaught exception 'Kamille\Utils\Laws\Exception\LawsUtilException' with message 'laws config file not found with viewId Core/exception (/Volumes/Macintosh HD 2/web/php/projects/kamille-app/config/laws/Core/exception.conf.php)' in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Utils/Laws/LawsUtil.php:107
+Stack trace:
+#0 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-modules/Core/Utils/Laws/LawsViewRenderer.php(95): Kamille\Utils\Laws\LawsUtil->renderLawsViewById('Core/exception', Object(Kamille\Utils\Laws\Config\LawsConfig), Array)
+#1 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-core/Controller/ApplicationController.php(57): Module\Core\Utils\Laws\LawsViewRenderer->renderByViewId('Core/exception', Object(Kamille\Utils\Laws\Config\LawsConfig), Array)
+#2 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-controllers/Core/ExceptionController.php(33): Core\Controller\ApplicationController->renderByViewId('Core/exception', Object(Kamille\Utils\Laws\Config\Law in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Utils/Laws/LawsUtil.php on line 107
+[01-Mar-2018 14:12:08 Europe/Paris] PHP Fatal error:  Uncaught exception 'Kamille\Utils\Laws\Exception\LawsUtilException' with message 'laws config file not found with viewId Core/exception (/Volumes/Macintosh HD 2/web/php/projects/kamille-app/config/laws/Core/exception.conf.php)' in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Utils/Laws/LawsUtil.php:107
+Stack trace:
+#0 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-modules/Core/Utils/Laws/LawsViewRenderer.php(95): Kamille\Utils\Laws\LawsUtil->renderLawsViewById('Core/exception', Object(Kamille\Utils\Laws\Config\LawsConfig), Array)
+#1 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-core/Controller/ApplicationController.php(57): Module\Core\Utils\Laws\LawsViewRenderer->renderByViewId('Core/exception', Object(Kamille\Utils\Laws\Config\LawsConfig), Array)
+#2 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-controllers/Core/ExceptionController.php(33): Core\Controller\ApplicationController->renderByViewId('Core/exception', Object(Kamille\Utils\Laws\Config\Law in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Utils/Laws/LawsUtil.php on line 107
+[01-Mar-2018 14:14:11 Europe/Paris] PHP Fatal error:  Uncaught exception 'Kamille\Utils\Laws\Exception\LawsUtilException' with message 'laws config file not found with viewId Core/exception (/Volumes/Macintosh HD 2/web/php/projects/kamille-app/config/laws/Core/exception.conf.php)' in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Utils/Laws/LawsUtil.php:107
+Stack trace:
+#0 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-modules/Core/Utils/Laws/LawsViewRenderer.php(95): Kamille\Utils\Laws\LawsUtil->renderLawsViewById('Core/exception', Object(Kamille\Utils\Laws\Config\LawsConfig), Array)
+#1 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-core/Controller/ApplicationController.php(57): Module\Core\Utils\Laws\LawsViewRenderer->renderByViewId('Core/exception', Object(Kamille\Utils\Laws\Config\LawsConfig), Array)
+#2 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-controllers/Core/ExceptionController.php(33): Core\Controller\ApplicationController->renderByViewId('Core/exception', Object(Kamille\Utils\Laws\Config\Law in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Utils/Laws/LawsUtil.php on line 107
+[01-Mar-2018 14:15:27 Europe/Paris] PHP Fatal error:  Uncaught exception 'Kamille\Utils\Laws\Exception\LawsUtilException' with message 'laws config file not found with viewId Core/exception (/Volumes/Macintosh HD 2/web/php/projects/kamille-app/config/laws/Core/exception.conf.php)' in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Utils/Laws/LawsUtil.php:107
+Stack trace:
+#0 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-modules/Core/Utils/Laws/LawsViewRenderer.php(95): Kamille\Utils\Laws\LawsUtil->renderLawsViewById('Core/exception', Object(Kamille\Utils\Laws\Config\LawsConfig), Array)
+#1 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-core/Controller/ApplicationController.php(57): Module\Core\Utils\Laws\LawsViewRenderer->renderByViewId('Core/exception', Object(Kamille\Utils\Laws\Config\LawsConfig), Array)
+#2 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-controllers/Core/ExceptionController.php(33): Core\Controller\ApplicationController->renderByViewId('Core/exception', Object(Kamille\Utils\Laws\Config\Law in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Utils/Laws/LawsUtil.php on line 107
+[01-Mar-2018 14:31:52 Europe/Paris] PHP Fatal error:  Uncaught exception 'Kamille\Utils\Laws\Exception\LawsUtilException' with message 'laws config file not found with viewId Core/exception (/Volumes/Macintosh HD 2/web/php/projects/kamille-app/config/laws/Core/exception.conf.php)' in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Utils/Laws/LawsUtil.php:107
+Stack trace:
+#0 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-modules/Core/Utils/Laws/LawsViewRenderer.php(95): Kamille\Utils\Laws\LawsUtil->renderLawsViewById('Core/exception', Object(Kamille\Utils\Laws\Config\LawsConfig), Array)
+#1 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-core/Controller/ApplicationController.php(57): Module\Core\Utils\Laws\LawsViewRenderer->renderByViewId('Core/exception', Object(Kamille\Utils\Laws\Config\LawsConfig), Array)
+#2 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-controllers/Core/ExceptionController.php(33): Core\Controller\ApplicationController->renderByViewId('Core/exception', Object(Kamille\Utils\Laws\Config\Law in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Utils/Laws/LawsUtil.php on line 107
+[01-Mar-2018 14:33:08 Europe/Paris] PHP Fatal error:  Uncaught exception 'Kamille\Utils\Laws\Exception\LawsUtilException' with message 'laws config file not found with viewId Core/exception (/Volumes/Macintosh HD 2/web/php/projects/kamille-app/config/laws/Core/exception.conf.php)' in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Utils/Laws/LawsUtil.php:107
+Stack trace:
+#0 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-modules/Core/Utils/Laws/LawsViewRenderer.php(95): Kamille\Utils\Laws\LawsUtil->renderLawsViewById('Core/exception', Object(Kamille\Utils\Laws\Config\LawsConfig), Array)
+#1 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-core/Controller/ApplicationController.php(57): Module\Core\Utils\Laws\LawsViewRenderer->renderByViewId('Core/exception', Object(Kamille\Utils\Laws\Config\LawsConfig), Array)
+#2 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-controllers/Core/ExceptionController.php(33): Core\Controller\ApplicationController->renderByViewId('Core/exception', Object(Kamille\Utils\Laws\Config\Law in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Utils/Laws/LawsUtil.php on line 107
+[01-Mar-2018 14:33:48 Europe/Paris] PHP Fatal error:  Class 'Loader\FileLoader' not found in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Utils/Claws/Renderer/ClawsRenderer.php on line 289
+[01-Mar-2018 14:33:55 Europe/Paris] PHP Fatal error:  Class 'Controller\ThisApp\Bootstrap\ClawsWidget' not found in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-controllers/ThisApp/Bootstrap/ThreePagesController.php on line 16
+[01-Mar-2018 14:34:07 Europe/Paris] PHP Fatal error:  Class 'Loader\FileLoader' not found in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Utils/Claws/Renderer/ClawsRenderer.php on line 289
+[01-Mar-2018 15:03:42 Europe/Paris] PHP Fatal error:  Uncaught exception 'Kamille\Utils\Laws\Exception\LawsUtilException' with message 'laws config file not found with viewId Core/exception (/Volumes/Macintosh HD 2/web/php/projects/kamille-app/config/laws/Core/exception.conf.php)' in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Utils/Laws/LawsUtil.php:107
+Stack trace:
+#0 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-modules/Core/Utils/Laws/LawsViewRenderer.php(95): Kamille\Utils\Laws\LawsUtil->renderLawsViewById('Core/exception', Object(Kamille\Utils\Laws\Config\LawsConfig), Array)
+#1 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-core/Controller/ApplicationController.php(57): Module\Core\Utils\Laws\LawsViewRenderer->renderByViewId('Core/exception', Object(Kamille\Utils\Laws\Config\LawsConfig), Array)
+#2 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-controllers/Core/ExceptionController.php(33): Core\Controller\ApplicationController->renderByViewId('Core/exception', Object(Kamille\Utils\Laws\Config\Law in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Utils/Laws/LawsUtil.php on line 107
+[01-Mar-2018 15:05:04 Europe/Paris] PHP Fatal error:  Uncaught exception 'Kamille\Mvc\Layout\Exception\LayoutException' with message 'Failed to load template: splash/default' in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Mvc/Layout/Layout.php:160
+Stack trace:
+#0 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Mvc/Layout/Layout.php(109): Kamille\Mvc\Layout\Layout->onLoaderFailed('splash/default')
+#1 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Mvc/Layout/HtmlLayout.php(22): Kamille\Mvc\Layout\Layout->render(Array)
+#2 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Utils/Laws/LawsUtil.php(334): Kamille\Mvc\Layout\HtmlLayout->render(Array)
+#3 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Utils/Laws/LawsUtil.php(105): Kamille\Utils\Laws\LawsUtil->renderLawsView(Array, Array)
+#4 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-modules/Core/Utils/Laws/LawsViewRenderer.php(95): Kamille\Utils\Laws\LawsUtil->renderLawsViewById('Core/exception', Obj in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Mvc/Layout/Layout.php on line 160
+[01-Mar-2018 15:06:04 Europe/Paris] PHP Fatal error:  Uncaught exception 'Kamille\Mvc\Widget\Exception\WidgetException' with message 'Failed to load template: Exception/lee' in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Mvc/Widget/Widget.php:142
+Stack trace:
+#0 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Mvc/Widget/Widget.php(90): Kamille\Mvc\Widget\Widget->onLoaderFailed('Exception/lee')
+#1 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Mvc/LayoutProxy/LawsLayoutProxy.php(99): Kamille\Mvc\Widget\Widget->render()
+#2 /private/var/folders/f7/5cwx_9lj1qg3qb_bw1ty42h00000gn/T/FOO1bEX3l(3): Kamille\Mvc\LayoutProxy\LawsLayoutProxy->position('main')
+#3 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Mvc/Renderer/PhpLayoutRenderer.php(99): include('/private/var/fo...')
+#4 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Mvc/Layout/Layout.php(105): Kamille\Mvc\Renderer\PhpLayoutRenderer->render('<div class="sit...', Array)
+#5 /Volumes/Macintosh HD 2/web/php/p in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Mvc/Widget/Widget.php on line 142
+[01-Mar-2018 15:06:40 Europe/Paris] PHP Fatal error:  Uncaught exception 'Kamille\Mvc\Widget\Exception\WidgetException' with message 'Failed to load template: Exception/lee' in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Mvc/Widget/Widget.php:142
+Stack trace:
+#0 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Mvc/Widget/Widget.php(90): Kamille\Mvc\Widget\Widget->onLoaderFailed('Exception/lee')
+#1 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Mvc/LayoutProxy/LawsLayoutProxy.php(99): Kamille\Mvc\Widget\Widget->render()
+#2 /private/var/folders/f7/5cwx_9lj1qg3qb_bw1ty42h00000gn/T/FOOAkAuYE(3): Kamille\Mvc\LayoutProxy\LawsLayoutProxy->position('main')
+#3 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Mvc/Renderer/PhpLayoutRenderer.php(99): include('/private/var/fo...')
+#4 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Mvc/Layout/Layout.php(105): Kamille\Mvc\Renderer\PhpLayoutRenderer->render('<div class="sit...', Array)
+#5 /Volumes/Macintosh HD 2/web/php/p in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Mvc/Widget/Widget.php on line 142
+[01-Mar-2018 15:07:58 Europe/Paris] PHP Fatal error:  Uncaught exception 'Kamille\Mvc\Widget\Exception\WidgetException' with message 'Failed to load template: Exception/lee' in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Mvc/Widget/Widget.php:142
+Stack trace:
+#0 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Mvc/Widget/Widget.php(90): Kamille\Mvc\Widget\Widget->onLoaderFailed('Exception/lee')
+#1 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Mvc/LayoutProxy/LawsLayoutProxy.php(99): Kamille\Mvc\Widget\Widget->render()
+#2 /private/var/folders/f7/5cwx_9lj1qg3qb_bw1ty42h00000gn/T/FOOhcwrcb(3): Kamille\Mvc\LayoutProxy\LawsLayoutProxy->position('main')
+#3 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Mvc/Renderer/PhpLayoutRenderer.php(99): include('/private/var/fo...')
+#4 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Mvc/Layout/Layout.php(105): Kamille\Mvc\Renderer\PhpLayoutRenderer->render('<div class="sit...', Array)
+#5 /Volumes/Macintosh HD 2/web/php/p in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Mvc/Widget/Widget.php on line 142
+[01-Mar-2018 15:08:42 Europe/Paris] PHP Fatal error:  Uncaught exception 'Kamille\Mvc\Widget\Exception\WidgetException' with message 'Failed to load template: Exception/lee' in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Mvc/Widget/Widget.php:142
+Stack trace:
+#0 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Mvc/Widget/Widget.php(90): Kamille\Mvc\Widget\Widget->onLoaderFailed('Exception/lee')
+#1 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Mvc/LayoutProxy/LawsLayoutProxy.php(99): Kamille\Mvc\Widget\Widget->render()
+#2 /private/var/folders/f7/5cwx_9lj1qg3qb_bw1ty42h00000gn/T/FOOas8W2M(3): Kamille\Mvc\LayoutProxy\LawsLayoutProxy->position('main')
+#3 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Mvc/Renderer/PhpLayoutRenderer.php(99): include('/private/var/fo...')
+#4 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Mvc/Layout/Layout.php(105): Kamille\Mvc\Renderer\PhpLayoutRenderer->render('<div class="sit...', Array)
+#5 /Volumes/Macintosh HD 2/web/php/p in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Mvc/Widget/Widget.php on line 142
+[01-Mar-2018 15:15:09 Europe/Paris] PHP Fatal error:  Class 'Controller\ThisApp\Bootstrap\ThreePages\BlogController' not found in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-modules/Core/ApplicationHandler/WebApplicationHandler.php on line 129
+[01-Mar-2018 16:32:39 Europe/Paris] PHP Notice:  Undefined index: i:item in /private/var/folders/f7/5cwx_9lj1qg3qb_bw1ty42h00000gn/T/FOOoQSdo9 on line 6
