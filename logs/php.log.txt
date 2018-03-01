@@ -88,3 +88,5 @@ Stack trace:
 #5 /Volumes/Macintosh HD 2/web/php/p in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Mvc/Widget/Widget.php on line 142
 [01-Mar-2018 15:15:09 Europe/Paris] PHP Fatal error:  Class 'Controller\ThisApp\Bootstrap\ThreePages\BlogController' not found in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-modules/Core/ApplicationHandler/WebApplicationHandler.php on line 129
 [01-Mar-2018 16:32:39 Europe/Paris] PHP Notice:  Undefined index: i:item in /private/var/folders/f7/5cwx_9lj1qg3qb_bw1ty42h00000gn/T/FOOoQSdo9 on line 6
+[01-Mar-2018 17:00:33 Europe/Paris] PHP Notice:  Undefined index: first_name in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-modules/ThisApp/Model/Form/ContactForm.php on line 41
+[01-Mar-2018 17:00:33 Europe/Paris] PHP Notice:  Undefined index: last_name in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-modules/ThisApp/Model/Form/ContactForm.php on line 42

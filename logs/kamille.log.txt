@@ -6045,3 +6045,986 @@ Stack trace:
 2018-03-01 16:39:34 - [debug]: [Kamille.Layout] - Rendering layout splash/default
 2018-03-01 16:39:34 - [page.perf]: apache2handler-/theme/bootstrapv4/assets/js/vendor/popper.min.js--0.024--1176360
 2018-03-01 16:39:34 - [page.perf]: apache2handler-/theme/bootstrapv4/dist/js/bootstrap.min.js--0.024--1176480
+2018-03-01 16:46:20 - [debug]: [Core module] - WebApplicationHandler.handle with uri: /bootstrap-contact
+2018-03-01 16:46:20 - [hooks]: [Kamille.Hook] - Core_onSiteConfigured was called
+2018-03-01 16:46:20 - [hooks]: [Kamille.Hook] - Core_feedAjaxUri2Controllers was called
+2018-03-01 16:46:20 - [hooks]: [Kamille.Hook] - Core_feedEarlyRouter was called
+2018-03-01 16:46:20 - [hooks]: [Kamille.Hook] - Core_configureRoutsyRouter was called
+2018-03-01 16:46:20 - [debug]: [Kamille.RoutsyRouter] - routeId MyApp_bootstrap_contact matched; fileName: routes; pattern: /bootstrap-contact
+2018-03-01 16:46:20 - [debug]: [Kamille.RouterRequestListener] - Router matched: Kamille\Utils\Routsy\RoutsyRouter, controller: Controller\ThisApp\Bootstrap\ThreePages\ContactPageController:render
+2018-03-01 16:46:20 - [hooks]: [Kamille.Hook] - Core_Controller_onControllerStringReceived was called
+2018-03-01 16:46:20 - [trace]: [Kamille] - ClawsRenderer: trace with theme: bootstrapv4
+- layout: sandwich_1c/default
+- widgets: 
+----- id: maincontent.body; tplName: ThisApp/MainContent/ContactPage/default
+----- id: top.menu; tplName: ThisApp/Top/Menu/default
+2018-03-01 16:46:20 - [debug]: [Kamille.Layout] - Rendering layout sandwich_1c/default
+2018-03-01 16:46:20 - [page.perf]: apache2handler-/bootstrap-contact--0.346--1106440
+2018-03-01 16:46:20 - [debug]: [Core module] - WebApplicationHandler.handle with uri: /theme/bootstrapv4/dist/js/bootstrap.min.js
+2018-03-01 16:46:20 - [hooks]: [Kamille.Hook] - Core_onSiteConfigured was called
+2018-03-01 16:46:20 - [debug]: [Core module] - WebApplicationHandler.handle with uri: /theme/bootstrapv4/assets/js/vendor/popper.min.js
+2018-03-01 16:46:20 - [hooks]: [Kamille.Hook] - Core_feedAjaxUri2Controllers was called
+2018-03-01 16:46:20 - [hooks]: [Kamille.Hook] - Core_onSiteConfigured was called
+2018-03-01 16:46:20 - [hooks]: [Kamille.Hook] - Core_feedAjaxUri2Controllers was called
+2018-03-01 16:46:20 - [hooks]: [Kamille.Hook] - Core_feedEarlyRouter was called
+2018-03-01 16:46:20 - [hooks]: [Kamille.Hook] - Core_feedEarlyRouter was called
+2018-03-01 16:46:20 - [hooks]: [Kamille.Hook] - Core_configureRoutsyRouter was called
+2018-03-01 16:46:20 - [hooks]: [Kamille.Hook] - Core_configureRoutsyRouter was called
+2018-03-01 16:46:20 - [error]: [Core module] - WebApplicationHandler: exception caught with message: 'The controller parameter was not found in the request /theme/bootstrapv4/dist/js/bootstrap.min.js'. uri was /theme/bootstrapv4/dist/js/bootstrap.min.js, redispatching to the fallback loop
+2018-03-01 16:46:20 - [error]: [Core module] - WebApplicationHandler: exception caught with message: 'The controller parameter was not found in the request /theme/bootstrapv4/assets/js/vendor/popper.min.js'. uri was /theme/bootstrapv4/assets/js/vendor/popper.min.js, redispatching to the fallback loop
+2018-03-01 16:46:20 - [debug]: [Kamille.RouterRequestListener] - Router matched: Module\Core\Architecture\Router\EarlyRouter, controller: Controller\Core\ExceptionController:render
+2018-03-01 16:46:20 - [hooks]: [Kamille.Hook] - Core_Controller_onControllerStringReceived was called
+2018-03-01 16:46:20 - [debug]: [Kamille.RouterRequestListener] - Router matched: Module\Core\Architecture\Router\EarlyRouter, controller: Controller\Core\ExceptionController:render
+2018-03-01 16:46:20 - [hooks]: [Kamille.Hook] - Core_Controller_onControllerStringReceived was called
+2018-03-01 16:46:20 - [error]: [Ekom module]: ExceptionController: exception 'Kamille\Architecture\RequestListener\Exception\RequestListenerException' with message 'The controller parameter was not found in the request /theme/bootstrapv4/dist/js/bootstrap.min.js' in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/RequestListener/Web/ControllerExecuterRequestListener.php:58
+Stack trace:
+#0 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/Application/Web/WebApplication.php(132): Kamille\Architecture\RequestListener\Web\ControllerExecuterRequestListener->listen(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#1 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-modules/Core/ApplicationHandler/WebApplicationHandler.php(137): Kamille\Architecture\Application\Web\WebApplication->handleRequest(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#2 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/www/index.php(26): Module\Core\ApplicationHandler\WebApplicationHandler->handle(Object(Kamille\Architecture\Application\Web\WebApplication))
+#3 {main}
+2018-03-01 16:46:20 - [error]: [Ekom module]: ExceptionController: exception 'Kamille\Architecture\RequestListener\Exception\RequestListenerException' with message 'The controller parameter was not found in the request /theme/bootstrapv4/assets/js/vendor/popper.min.js' in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/RequestListener/Web/ControllerExecuterRequestListener.php:58
+Stack trace:
+#0 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/Application/Web/WebApplication.php(132): Kamille\Architecture\RequestListener\Web\ControllerExecuterRequestListener->listen(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#1 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-modules/Core/ApplicationHandler/WebApplicationHandler.php(137): Kamille\Architecture\Application\Web\WebApplication->handleRequest(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#2 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/www/index.php(26): Module\Core\ApplicationHandler\WebApplicationHandler->handle(Object(Kamille\Architecture\Application\Web\WebApplication))
+#3 {main}
+2018-03-01 16:46:20 - [debug]: [Core module] - LawsViewRenderer.renderByViewId with viewId Core/exception
+2018-03-01 16:46:20 - [hooks]: [Kamille.Hook] - Core_autoLawsConfig was called
+2018-03-01 16:46:20 - [debug]: [Core module] - LawsViewRenderer.renderByViewId with viewId Core/exception
+2018-03-01 16:46:20 - [hooks]: [Kamille.Hook] - Core_autoLawsConfig was called
+2018-03-01 16:46:20 - [hooks]: [Kamille.Hook] - Core_lazyJsInit_addCodeWrapper was called
+2018-03-01 16:46:20 - [hooks]: [Kamille.Hook] - Core_lazyJsInit_addCodeWrapper was called
+2018-03-01 16:46:20 - [hooks]: [Kamille.Hook] - Core_addLawsUtilProxyDecorators was called
+2018-03-01 16:46:20 - [hooks]: [Kamille.Hook] - Core_addLawsUtilProxyDecorators was called
+2018-03-01 16:46:20 - [hooks]: [Kamille.Hook] - Core_configureLawsUtil was called
+2018-03-01 16:46:20 - [hooks]: [Kamille.Hook] - Core_configureLawsUtil was called
+2018-03-01 16:46:20 - [trace]: [Kamille.LawsUtil] - trace with theme: bootstrapv4, viewId: Core/exception (/config/laws/Core/exception.conf.php):
+- layout: splash/default
+- widgets: 
+----- id: main.exception; tplName: Core/Exception/default
+2018-03-01 16:46:20 - [trace]: [Kamille.LawsUtil] - trace with theme: bootstrapv4, viewId: Core/exception (/config/laws/Core/exception.conf.php):
+- layout: splash/default
+- widgets: 
+----- id: main.exception; tplName: Core/Exception/default
+2018-03-01 16:46:20 - [debug]: [Kamille.Layout] - Rendering layout splash/default
+2018-03-01 16:46:20 - [debug]: [Kamille.Layout] - Rendering layout splash/default
+2018-03-01 16:46:20 - [page.perf]: apache2handler-/theme/bootstrapv4/dist/js/bootstrap.min.js--0.254--1176480
+2018-03-01 16:46:20 - [page.perf]: apache2handler-/theme/bootstrapv4/assets/js/vendor/popper.min.js--0.251--1176632
+2018-03-01 16:46:21 - [debug]: [Core module] - WebApplicationHandler.handle with uri: /bootstrap-contact
+2018-03-01 16:46:21 - [hooks]: [Kamille.Hook] - Core_onSiteConfigured was called
+2018-03-01 16:46:21 - [hooks]: [Kamille.Hook] - Core_feedAjaxUri2Controllers was called
+2018-03-01 16:46:21 - [hooks]: [Kamille.Hook] - Core_feedEarlyRouter was called
+2018-03-01 16:46:21 - [hooks]: [Kamille.Hook] - Core_configureRoutsyRouter was called
+2018-03-01 16:46:21 - [debug]: [Kamille.RoutsyRouter] - routeId MyApp_bootstrap_contact matched; fileName: routes; pattern: /bootstrap-contact
+2018-03-01 16:46:21 - [debug]: [Kamille.RouterRequestListener] - Router matched: Kamille\Utils\Routsy\RoutsyRouter, controller: Controller\ThisApp\Bootstrap\ThreePages\ContactPageController:render
+2018-03-01 16:46:21 - [hooks]: [Kamille.Hook] - Core_Controller_onControllerStringReceived was called
+2018-03-01 17:00:33 - [debug]: [Core module] - WebApplicationHandler.handle with uri: /bootstrap-contact
+2018-03-01 17:00:33 - [hooks]: [Kamille.Hook] - Core_onSiteConfigured was called
+2018-03-01 17:00:33 - [hooks]: [Kamille.Hook] - Core_feedAjaxUri2Controllers was called
+2018-03-01 17:00:33 - [hooks]: [Kamille.Hook] - Core_feedEarlyRouter was called
+2018-03-01 17:00:33 - [hooks]: [Kamille.Hook] - Core_configureRoutsyRouter was called
+2018-03-01 17:00:33 - [debug]: [Kamille.RoutsyRouter] - routeId MyApp_bootstrap_contact matched; fileName: routes; pattern: /bootstrap-contact
+2018-03-01 17:00:33 - [debug]: [Kamille.RouterRequestListener] - Router matched: Kamille\Utils\Routsy\RoutsyRouter, controller: Controller\ThisApp\Bootstrap\ThreePages\ContactPageController:render
+2018-03-01 17:00:33 - [hooks]: [Kamille.Hook] - Core_Controller_onControllerStringReceived was called
+2018-03-01 17:00:33 - [trace]: [Kamille] - ClawsRenderer: trace with theme: bootstrapv4
+- layout: sandwich_1c/default
+- widgets: 
+----- id: maincontent.body; tplName: ThisApp/MainContent/ContactPage/default
+----- id: top.menu; tplName: ThisApp/Top/Menu/default
+2018-03-01 17:00:33 - [debug]: [Kamille.Layout] - Rendering layout sandwich_1c/default
+2018-03-01 17:00:33 - [page.perf]: apache2handler-/bootstrap-contact--0.478--1121520
+2018-03-01 17:00:33 - [debug]: [Core module] - WebApplicationHandler.handle with uri: /theme/bootstrapv4/assets/js/vendor/popper.min.js
+2018-03-01 17:00:33 - [hooks]: [Kamille.Hook] - Core_onSiteConfigured was called
+2018-03-01 17:00:33 - [hooks]: [Kamille.Hook] - Core_feedAjaxUri2Controllers was called
+2018-03-01 17:00:33 - [debug]: [Core module] - WebApplicationHandler.handle with uri: /theme/bootstrapv4/dist/js/bootstrap.min.js
+2018-03-01 17:00:33 - [hooks]: [Kamille.Hook] - Core_feedEarlyRouter was called
+2018-03-01 17:00:33 - [hooks]: [Kamille.Hook] - Core_onSiteConfigured was called
+2018-03-01 17:00:33 - [hooks]: [Kamille.Hook] - Core_feedAjaxUri2Controllers was called
+2018-03-01 17:00:33 - [hooks]: [Kamille.Hook] - Core_feedEarlyRouter was called
+2018-03-01 17:00:33 - [hooks]: [Kamille.Hook] - Core_configureRoutsyRouter was called
+2018-03-01 17:00:33 - [hooks]: [Kamille.Hook] - Core_configureRoutsyRouter was called
+2018-03-01 17:00:33 - [error]: [Core module] - WebApplicationHandler: exception caught with message: 'The controller parameter was not found in the request /theme/bootstrapv4/assets/js/vendor/popper.min.js'. uri was /theme/bootstrapv4/assets/js/vendor/popper.min.js, redispatching to the fallback loop
+2018-03-01 17:00:33 - [debug]: [Kamille.RouterRequestListener] - Router matched: Module\Core\Architecture\Router\EarlyRouter, controller: Controller\Core\ExceptionController:render
+2018-03-01 17:00:33 - [hooks]: [Kamille.Hook] - Core_Controller_onControllerStringReceived was called
+2018-03-01 17:00:33 - [error]: [Core module] - WebApplicationHandler: exception caught with message: 'The controller parameter was not found in the request /theme/bootstrapv4/dist/js/bootstrap.min.js'. uri was /theme/bootstrapv4/dist/js/bootstrap.min.js, redispatching to the fallback loop
+2018-03-01 17:00:33 - [debug]: [Kamille.RouterRequestListener] - Router matched: Module\Core\Architecture\Router\EarlyRouter, controller: Controller\Core\ExceptionController:render
+2018-03-01 17:00:33 - [error]: [Ekom module]: ExceptionController: exception 'Kamille\Architecture\RequestListener\Exception\RequestListenerException' with message 'The controller parameter was not found in the request /theme/bootstrapv4/assets/js/vendor/popper.min.js' in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/RequestListener/Web/ControllerExecuterRequestListener.php:58
+Stack trace:
+#0 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/Application/Web/WebApplication.php(132): Kamille\Architecture\RequestListener\Web\ControllerExecuterRequestListener->listen(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#1 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-modules/Core/ApplicationHandler/WebApplicationHandler.php(137): Kamille\Architecture\Application\Web\WebApplication->handleRequest(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#2 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/www/index.php(26): Module\Core\ApplicationHandler\WebApplicationHandler->handle(Object(Kamille\Architecture\Application\Web\WebApplication))
+#3 {main}
+2018-03-01 17:00:33 - [hooks]: [Kamille.Hook] - Core_Controller_onControllerStringReceived was called
+2018-03-01 17:00:33 - [debug]: [Core module] - LawsViewRenderer.renderByViewId with viewId Core/exception
+2018-03-01 17:00:33 - [error]: [Ekom module]: ExceptionController: exception 'Kamille\Architecture\RequestListener\Exception\RequestListenerException' with message 'The controller parameter was not found in the request /theme/bootstrapv4/dist/js/bootstrap.min.js' in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/RequestListener/Web/ControllerExecuterRequestListener.php:58
+Stack trace:
+#0 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/Application/Web/WebApplication.php(132): Kamille\Architecture\RequestListener\Web\ControllerExecuterRequestListener->listen(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#1 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-modules/Core/ApplicationHandler/WebApplicationHandler.php(137): Kamille\Architecture\Application\Web\WebApplication->handleRequest(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#2 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/www/index.php(26): Module\Core\ApplicationHandler\WebApplicationHandler->handle(Object(Kamille\Architecture\Application\Web\WebApplication))
+#3 {main}
+2018-03-01 17:00:33 - [debug]: [Core module] - LawsViewRenderer.renderByViewId with viewId Core/exception
+2018-03-01 17:00:33 - [hooks]: [Kamille.Hook] - Core_autoLawsConfig was called
+2018-03-01 17:00:33 - [hooks]: [Kamille.Hook] - Core_autoLawsConfig was called
+2018-03-01 17:00:33 - [hooks]: [Kamille.Hook] - Core_lazyJsInit_addCodeWrapper was called
+2018-03-01 17:00:33 - [hooks]: [Kamille.Hook] - Core_lazyJsInit_addCodeWrapper was called
+2018-03-01 17:00:33 - [hooks]: [Kamille.Hook] - Core_addLawsUtilProxyDecorators was called
+2018-03-01 17:00:33 - [hooks]: [Kamille.Hook] - Core_addLawsUtilProxyDecorators was called
+2018-03-01 17:00:33 - [hooks]: [Kamille.Hook] - Core_configureLawsUtil was called
+2018-03-01 17:00:33 - [hooks]: [Kamille.Hook] - Core_configureLawsUtil was called
+2018-03-01 17:00:33 - [trace]: [Kamille.LawsUtil] - trace with theme: bootstrapv4, viewId: Core/exception (/config/laws/Core/exception.conf.php):
+- layout: splash/default
+- widgets: 
+----- id: main.exception; tplName: Core/Exception/default
+2018-03-01 17:00:33 - [trace]: [Kamille.LawsUtil] - trace with theme: bootstrapv4, viewId: Core/exception (/config/laws/Core/exception.conf.php):
+- layout: splash/default
+- widgets: 
+----- id: main.exception; tplName: Core/Exception/default
+2018-03-01 17:00:33 - [debug]: [Kamille.Layout] - Rendering layout splash/default
+2018-03-01 17:00:33 - [debug]: [Kamille.Layout] - Rendering layout splash/default
+2018-03-01 17:00:33 - [page.perf]: apache2handler-/theme/bootstrapv4/assets/js/vendor/popper.min.js--0.316--1176632
+2018-03-01 17:00:33 - [page.perf]: apache2handler-/theme/bootstrapv4/dist/js/bootstrap.min.js--0.312--1176480
+2018-03-01 17:01:10 - [debug]: [Core module] - WebApplicationHandler.handle with uri: /bootstrap-contact
+2018-03-01 17:01:10 - [hooks]: [Kamille.Hook] - Core_onSiteConfigured was called
+2018-03-01 17:01:10 - [hooks]: [Kamille.Hook] - Core_feedAjaxUri2Controllers was called
+2018-03-01 17:01:10 - [hooks]: [Kamille.Hook] - Core_feedEarlyRouter was called
+2018-03-01 17:01:10 - [hooks]: [Kamille.Hook] - Core_configureRoutsyRouter was called
+2018-03-01 17:01:10 - [debug]: [Kamille.RoutsyRouter] - routeId MyApp_bootstrap_contact matched; fileName: routes; pattern: /bootstrap-contact
+2018-03-01 17:01:10 - [debug]: [Kamille.RouterRequestListener] - Router matched: Kamille\Utils\Routsy\RoutsyRouter, controller: Controller\ThisApp\Bootstrap\ThreePages\ContactPageController:render
+2018-03-01 17:01:10 - [hooks]: [Kamille.Hook] - Core_Controller_onControllerStringReceived was called
+2018-03-01 17:01:10 - [trace]: [Kamille] - ClawsRenderer: trace with theme: bootstrapv4
+- layout: sandwich_1c/default
+- widgets: 
+----- id: maincontent.body; tplName: ThisApp/MainContent/ContactPage/default
+----- id: top.menu; tplName: ThisApp/Top/Menu/default
+2018-03-01 17:01:10 - [debug]: [Kamille.Layout] - Rendering layout sandwich_1c/default
+2018-03-01 17:01:10 - [page.perf]: apache2handler-/bootstrap-contact--0.052--1118200
+2018-03-01 17:01:10 - [debug]: [Core module] - WebApplicationHandler.handle with uri: /theme/bootstrapv4/dist/js/bootstrap.min.js
+2018-03-01 17:01:10 - [hooks]: [Kamille.Hook] - Core_onSiteConfigured was called
+2018-03-01 17:01:10 - [hooks]: [Kamille.Hook] - Core_feedAjaxUri2Controllers was called
+2018-03-01 17:01:10 - [hooks]: [Kamille.Hook] - Core_feedEarlyRouter was called
+2018-03-01 17:01:10 - [debug]: [Core module] - WebApplicationHandler.handle with uri: /theme/bootstrapv4/assets/js/vendor/popper.min.js
+2018-03-01 17:01:10 - [hooks]: [Kamille.Hook] - Core_configureRoutsyRouter was called
+2018-03-01 17:01:10 - [error]: [Core module] - WebApplicationHandler: exception caught with message: 'The controller parameter was not found in the request /theme/bootstrapv4/dist/js/bootstrap.min.js'. uri was /theme/bootstrapv4/dist/js/bootstrap.min.js, redispatching to the fallback loop
+2018-03-01 17:01:10 - [hooks]: [Kamille.Hook] - Core_onSiteConfigured was called
+2018-03-01 17:01:10 - [debug]: [Kamille.RouterRequestListener] - Router matched: Module\Core\Architecture\Router\EarlyRouter, controller: Controller\Core\ExceptionController:render
+2018-03-01 17:01:10 - [hooks]: [Kamille.Hook] - Core_Controller_onControllerStringReceived was called
+2018-03-01 17:01:10 - [hooks]: [Kamille.Hook] - Core_feedAjaxUri2Controllers was called
+2018-03-01 17:01:10 - [hooks]: [Kamille.Hook] - Core_feedEarlyRouter was called
+2018-03-01 17:01:10 - [error]: [Ekom module]: ExceptionController: exception 'Kamille\Architecture\RequestListener\Exception\RequestListenerException' with message 'The controller parameter was not found in the request /theme/bootstrapv4/dist/js/bootstrap.min.js' in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/RequestListener/Web/ControllerExecuterRequestListener.php:58
+Stack trace:
+#0 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/Application/Web/WebApplication.php(132): Kamille\Architecture\RequestListener\Web\ControllerExecuterRequestListener->listen(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#1 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-modules/Core/ApplicationHandler/WebApplicationHandler.php(137): Kamille\Architecture\Application\Web\WebApplication->handleRequest(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#2 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/www/index.php(26): Module\Core\ApplicationHandler\WebApplicationHandler->handle(Object(Kamille\Architecture\Application\Web\WebApplication))
+#3 {main}
+2018-03-01 17:01:10 - [debug]: [Core module] - LawsViewRenderer.renderByViewId with viewId Core/exception
+2018-03-01 17:01:10 - [hooks]: [Kamille.Hook] - Core_autoLawsConfig was called
+2018-03-01 17:01:10 - [hooks]: [Kamille.Hook] - Core_lazyJsInit_addCodeWrapper was called
+2018-03-01 17:01:10 - [hooks]: [Kamille.Hook] - Core_configureRoutsyRouter was called
+2018-03-01 17:01:10 - [hooks]: [Kamille.Hook] - Core_addLawsUtilProxyDecorators was called
+2018-03-01 17:01:10 - [error]: [Core module] - WebApplicationHandler: exception caught with message: 'The controller parameter was not found in the request /theme/bootstrapv4/assets/js/vendor/popper.min.js'. uri was /theme/bootstrapv4/assets/js/vendor/popper.min.js, redispatching to the fallback loop
+2018-03-01 17:01:10 - [hooks]: [Kamille.Hook] - Core_configureLawsUtil was called
+2018-03-01 17:01:10 - [debug]: [Kamille.RouterRequestListener] - Router matched: Module\Core\Architecture\Router\EarlyRouter, controller: Controller\Core\ExceptionController:render
+2018-03-01 17:01:10 - [hooks]: [Kamille.Hook] - Core_Controller_onControllerStringReceived was called
+2018-03-01 17:01:10 - [trace]: [Kamille.LawsUtil] - trace with theme: bootstrapv4, viewId: Core/exception (/config/laws/Core/exception.conf.php):
+- layout: splash/default
+- widgets: 
+----- id: main.exception; tplName: Core/Exception/default
+2018-03-01 17:01:10 - [error]: [Ekom module]: ExceptionController: exception 'Kamille\Architecture\RequestListener\Exception\RequestListenerException' with message 'The controller parameter was not found in the request /theme/bootstrapv4/assets/js/vendor/popper.min.js' in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/RequestListener/Web/ControllerExecuterRequestListener.php:58
+Stack trace:
+#0 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/Application/Web/WebApplication.php(132): Kamille\Architecture\RequestListener\Web\ControllerExecuterRequestListener->listen(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#1 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-modules/Core/ApplicationHandler/WebApplicationHandler.php(137): Kamille\Architecture\Application\Web\WebApplication->handleRequest(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#2 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/www/index.php(26): Module\Core\ApplicationHandler\WebApplicationHandler->handle(Object(Kamille\Architecture\Application\Web\WebApplication))
+#3 {main}
+2018-03-01 17:01:10 - [debug]: [Core module] - LawsViewRenderer.renderByViewId with viewId Core/exception
+2018-03-01 17:01:10 - [debug]: [Kamille.Layout] - Rendering layout splash/default
+2018-03-01 17:01:10 - [hooks]: [Kamille.Hook] - Core_autoLawsConfig was called
+2018-03-01 17:01:10 - [hooks]: [Kamille.Hook] - Core_lazyJsInit_addCodeWrapper was called
+2018-03-01 17:01:10 - [hooks]: [Kamille.Hook] - Core_addLawsUtilProxyDecorators was called
+2018-03-01 17:01:10 - [page.perf]: apache2handler-/theme/bootstrapv4/dist/js/bootstrap.min.js--0.030--1176480
+2018-03-01 17:01:10 - [hooks]: [Kamille.Hook] - Core_configureLawsUtil was called
+2018-03-01 17:01:10 - [trace]: [Kamille.LawsUtil] - trace with theme: bootstrapv4, viewId: Core/exception (/config/laws/Core/exception.conf.php):
+- layout: splash/default
+- widgets: 
+----- id: main.exception; tplName: Core/Exception/default
+2018-03-01 17:01:10 - [debug]: [Kamille.Layout] - Rendering layout splash/default
+2018-03-01 17:01:10 - [page.perf]: apache2handler-/theme/bootstrapv4/assets/js/vendor/popper.min.js--0.037--1176632
+2018-03-01 17:01:34 - [debug]: [Core module] - WebApplicationHandler.handle with uri: /bootstrap-contact
+2018-03-01 17:01:34 - [hooks]: [Kamille.Hook] - Core_onSiteConfigured was called
+2018-03-01 17:01:34 - [hooks]: [Kamille.Hook] - Core_feedAjaxUri2Controllers was called
+2018-03-01 17:01:34 - [hooks]: [Kamille.Hook] - Core_feedEarlyRouter was called
+2018-03-01 17:01:34 - [hooks]: [Kamille.Hook] - Core_configureRoutsyRouter was called
+2018-03-01 17:01:34 - [debug]: [Kamille.RoutsyRouter] - routeId MyApp_bootstrap_contact matched; fileName: routes; pattern: /bootstrap-contact
+2018-03-01 17:01:34 - [debug]: [Kamille.RouterRequestListener] - Router matched: Kamille\Utils\Routsy\RoutsyRouter, controller: Controller\ThisApp\Bootstrap\ThreePages\ContactPageController:render
+2018-03-01 17:01:34 - [hooks]: [Kamille.Hook] - Core_Controller_onControllerStringReceived was called
+2018-03-01 17:01:34 - [trace]: [Kamille] - ClawsRenderer: trace with theme: bootstrapv4
+- layout: sandwich_1c/default
+- widgets: 
+----- id: maincontent.body; tplName: ThisApp/MainContent/ContactPage/default
+----- id: top.menu; tplName: ThisApp/Top/Menu/default
+2018-03-01 17:01:34 - [debug]: [Kamille.Layout] - Rendering layout sandwich_1c/default
+2018-03-01 17:01:34 - [page.perf]: apache2handler-/bootstrap-contact--0.104--1118312
+2018-03-01 17:01:34 - [debug]: [Core module] - WebApplicationHandler.handle with uri: /theme/bootstrapv4/dist/js/bootstrap.min.js
+2018-03-01 17:01:34 - [hooks]: [Kamille.Hook] - Core_onSiteConfigured was called
+2018-03-01 17:01:34 - [hooks]: [Kamille.Hook] - Core_feedAjaxUri2Controllers was called
+2018-03-01 17:01:34 - [debug]: [Core module] - WebApplicationHandler.handle with uri: /theme/bootstrapv4/assets/js/vendor/popper.min.js
+2018-03-01 17:01:34 - [hooks]: [Kamille.Hook] - Core_feedEarlyRouter was called
+2018-03-01 17:01:34 - [hooks]: [Kamille.Hook] - Core_configureRoutsyRouter was called
+2018-03-01 17:01:34 - [hooks]: [Kamille.Hook] - Core_onSiteConfigured was called
+2018-03-01 17:01:34 - [hooks]: [Kamille.Hook] - Core_feedAjaxUri2Controllers was called
+2018-03-01 17:01:34 - [error]: [Core module] - WebApplicationHandler: exception caught with message: 'The controller parameter was not found in the request /theme/bootstrapv4/dist/js/bootstrap.min.js'. uri was /theme/bootstrapv4/dist/js/bootstrap.min.js, redispatching to the fallback loop
+2018-03-01 17:01:34 - [hooks]: [Kamille.Hook] - Core_feedEarlyRouter was called
+2018-03-01 17:01:34 - [debug]: [Kamille.RouterRequestListener] - Router matched: Module\Core\Architecture\Router\EarlyRouter, controller: Controller\Core\ExceptionController:render
+2018-03-01 17:01:34 - [hooks]: [Kamille.Hook] - Core_Controller_onControllerStringReceived was called
+2018-03-01 17:01:34 - [error]: [Ekom module]: ExceptionController: exception 'Kamille\Architecture\RequestListener\Exception\RequestListenerException' with message 'The controller parameter was not found in the request /theme/bootstrapv4/dist/js/bootstrap.min.js' in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/RequestListener/Web/ControllerExecuterRequestListener.php:58
+Stack trace:
+#0 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/Application/Web/WebApplication.php(132): Kamille\Architecture\RequestListener\Web\ControllerExecuterRequestListener->listen(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#1 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-modules/Core/ApplicationHandler/WebApplicationHandler.php(137): Kamille\Architecture\Application\Web\WebApplication->handleRequest(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#2 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/www/index.php(26): Module\Core\ApplicationHandler\WebApplicationHandler->handle(Object(Kamille\Architecture\Application\Web\WebApplication))
+#3 {main}
+2018-03-01 17:01:34 - [debug]: [Core module] - LawsViewRenderer.renderByViewId with viewId Core/exception
+2018-03-01 17:01:34 - [hooks]: [Kamille.Hook] - Core_autoLawsConfig was called
+2018-03-01 17:01:34 - [hooks]: [Kamille.Hook] - Core_configureRoutsyRouter was called
+2018-03-01 17:01:34 - [hooks]: [Kamille.Hook] - Core_lazyJsInit_addCodeWrapper was called
+2018-03-01 17:01:34 - [error]: [Core module] - WebApplicationHandler: exception caught with message: 'The controller parameter was not found in the request /theme/bootstrapv4/assets/js/vendor/popper.min.js'. uri was /theme/bootstrapv4/assets/js/vendor/popper.min.js, redispatching to the fallback loop
+2018-03-01 17:01:34 - [hooks]: [Kamille.Hook] - Core_addLawsUtilProxyDecorators was called
+2018-03-01 17:01:34 - [debug]: [Kamille.RouterRequestListener] - Router matched: Module\Core\Architecture\Router\EarlyRouter, controller: Controller\Core\ExceptionController:render
+2018-03-01 17:01:34 - [hooks]: [Kamille.Hook] - Core_Controller_onControllerStringReceived was called
+2018-03-01 17:01:34 - [hooks]: [Kamille.Hook] - Core_configureLawsUtil was called
+2018-03-01 17:01:34 - [error]: [Ekom module]: ExceptionController: exception 'Kamille\Architecture\RequestListener\Exception\RequestListenerException' with message 'The controller parameter was not found in the request /theme/bootstrapv4/assets/js/vendor/popper.min.js' in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/RequestListener/Web/ControllerExecuterRequestListener.php:58
+Stack trace:
+#0 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/Application/Web/WebApplication.php(132): Kamille\Architecture\RequestListener\Web\ControllerExecuterRequestListener->listen(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#1 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-modules/Core/ApplicationHandler/WebApplicationHandler.php(137): Kamille\Architecture\Application\Web\WebApplication->handleRequest(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#2 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/www/index.php(26): Module\Core\ApplicationHandler\WebApplicationHandler->handle(Object(Kamille\Architecture\Application\Web\WebApplication))
+#3 {main}
+2018-03-01 17:01:34 - [debug]: [Core module] - LawsViewRenderer.renderByViewId with viewId Core/exception
+2018-03-01 17:01:34 - [trace]: [Kamille.LawsUtil] - trace with theme: bootstrapv4, viewId: Core/exception (/config/laws/Core/exception.conf.php):
+- layout: splash/default
+- widgets: 
+----- id: main.exception; tplName: Core/Exception/default
+2018-03-01 17:01:34 - [hooks]: [Kamille.Hook] - Core_autoLawsConfig was called
+2018-03-01 17:01:34 - [hooks]: [Kamille.Hook] - Core_lazyJsInit_addCodeWrapper was called
+2018-03-01 17:01:34 - [debug]: [Kamille.Layout] - Rendering layout splash/default
+2018-03-01 17:01:34 - [hooks]: [Kamille.Hook] - Core_addLawsUtilProxyDecorators was called
+2018-03-01 17:01:34 - [hooks]: [Kamille.Hook] - Core_configureLawsUtil was called
+2018-03-01 17:01:34 - [trace]: [Kamille.LawsUtil] - trace with theme: bootstrapv4, viewId: Core/exception (/config/laws/Core/exception.conf.php):
+- layout: splash/default
+- widgets: 
+----- id: main.exception; tplName: Core/Exception/default
+2018-03-01 17:01:34 - [debug]: [Kamille.Layout] - Rendering layout splash/default
+2018-03-01 17:01:34 - [page.perf]: apache2handler-/theme/bootstrapv4/dist/js/bootstrap.min.js--0.043--1176480
+2018-03-01 17:01:34 - [page.perf]: apache2handler-/theme/bootstrapv4/assets/js/vendor/popper.min.js--0.040--1176632
+2018-03-01 17:03:44 - [debug]: [Core module] - WebApplicationHandler.handle with uri: /bootstrap-contact
+2018-03-01 17:03:44 - [hooks]: [Kamille.Hook] - Core_onSiteConfigured was called
+2018-03-01 17:03:44 - [hooks]: [Kamille.Hook] - Core_feedAjaxUri2Controllers was called
+2018-03-01 17:03:44 - [hooks]: [Kamille.Hook] - Core_feedEarlyRouter was called
+2018-03-01 17:03:44 - [hooks]: [Kamille.Hook] - Core_configureRoutsyRouter was called
+2018-03-01 17:03:44 - [debug]: [Kamille.RoutsyRouter] - routeId MyApp_bootstrap_contact matched; fileName: routes; pattern: /bootstrap-contact
+2018-03-01 17:03:44 - [debug]: [Kamille.RouterRequestListener] - Router matched: Kamille\Utils\Routsy\RoutsyRouter, controller: Controller\ThisApp\Bootstrap\ThreePages\ContactPageController:render
+2018-03-01 17:03:44 - [hooks]: [Kamille.Hook] - Core_Controller_onControllerStringReceived was called
+2018-03-01 17:03:44 - [trace]: [Kamille] - ClawsRenderer: trace with theme: bootstrapv4
+- layout: sandwich_1c/default
+- widgets: 
+----- id: maincontent.body; tplName: ThisApp/MainContent/ContactPage/default
+----- id: top.menu; tplName: ThisApp/Top/Menu/default
+2018-03-01 17:03:44 - [debug]: [Kamille.Layout] - Rendering layout sandwich_1c/default
+2018-03-01 17:03:44 - [page.perf]: apache2handler-/bootstrap-contact--0.370--1118024
+2018-03-01 17:03:44 - [debug]: [Core module] - WebApplicationHandler.handle with uri: /theme/bootstrapv4/dist/js/bootstrap.min.js
+2018-03-01 17:03:44 - [debug]: [Core module] - WebApplicationHandler.handle with uri: /theme/bootstrapv4/assets/js/vendor/popper.min.js
+2018-03-01 17:03:44 - [hooks]: [Kamille.Hook] - Core_onSiteConfigured was called
+2018-03-01 17:03:44 - [hooks]: [Kamille.Hook] - Core_feedAjaxUri2Controllers was called
+2018-03-01 17:03:44 - [hooks]: [Kamille.Hook] - Core_onSiteConfigured was called
+2018-03-01 17:03:44 - [hooks]: [Kamille.Hook] - Core_feedEarlyRouter was called
+2018-03-01 17:03:44 - [hooks]: [Kamille.Hook] - Core_feedAjaxUri2Controllers was called
+2018-03-01 17:03:44 - [hooks]: [Kamille.Hook] - Core_feedEarlyRouter was called
+2018-03-01 17:03:44 - [hooks]: [Kamille.Hook] - Core_configureRoutsyRouter was called
+2018-03-01 17:03:44 - [hooks]: [Kamille.Hook] - Core_configureRoutsyRouter was called
+2018-03-01 17:03:44 - [error]: [Core module] - WebApplicationHandler: exception caught with message: 'The controller parameter was not found in the request /theme/bootstrapv4/dist/js/bootstrap.min.js'. uri was /theme/bootstrapv4/dist/js/bootstrap.min.js, redispatching to the fallback loop
+2018-03-01 17:03:44 - [error]: [Core module] - WebApplicationHandler: exception caught with message: 'The controller parameter was not found in the request /theme/bootstrapv4/assets/js/vendor/popper.min.js'. uri was /theme/bootstrapv4/assets/js/vendor/popper.min.js, redispatching to the fallback loop
+2018-03-01 17:03:44 - [debug]: [Kamille.RouterRequestListener] - Router matched: Module\Core\Architecture\Router\EarlyRouter, controller: Controller\Core\ExceptionController:render
+2018-03-01 17:03:44 - [debug]: [Kamille.RouterRequestListener] - Router matched: Module\Core\Architecture\Router\EarlyRouter, controller: Controller\Core\ExceptionController:render
+2018-03-01 17:03:44 - [hooks]: [Kamille.Hook] - Core_Controller_onControllerStringReceived was called
+2018-03-01 17:03:44 - [hooks]: [Kamille.Hook] - Core_Controller_onControllerStringReceived was called
+2018-03-01 17:03:44 - [error]: [Ekom module]: ExceptionController: exception 'Kamille\Architecture\RequestListener\Exception\RequestListenerException' with message 'The controller parameter was not found in the request /theme/bootstrapv4/dist/js/bootstrap.min.js' in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/RequestListener/Web/ControllerExecuterRequestListener.php:58
+Stack trace:
+#0 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/Application/Web/WebApplication.php(132): Kamille\Architecture\RequestListener\Web\ControllerExecuterRequestListener->listen(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#1 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-modules/Core/ApplicationHandler/WebApplicationHandler.php(137): Kamille\Architecture\Application\Web\WebApplication->handleRequest(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#2 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/www/index.php(26): Module\Core\ApplicationHandler\WebApplicationHandler->handle(Object(Kamille\Architecture\Application\Web\WebApplication))
+#3 {main}
+2018-03-01 17:03:44 - [error]: [Ekom module]: ExceptionController: exception 'Kamille\Architecture\RequestListener\Exception\RequestListenerException' with message 'The controller parameter was not found in the request /theme/bootstrapv4/assets/js/vendor/popper.min.js' in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/RequestListener/Web/ControllerExecuterRequestListener.php:58
+Stack trace:
+#0 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/Application/Web/WebApplication.php(132): Kamille\Architecture\RequestListener\Web\ControllerExecuterRequestListener->listen(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#1 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-modules/Core/ApplicationHandler/WebApplicationHandler.php(137): Kamille\Architecture\Application\Web\WebApplication->handleRequest(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#2 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/www/index.php(26): Module\Core\ApplicationHandler\WebApplicationHandler->handle(Object(Kamille\Architecture\Application\Web\WebApplication))
+#3 {main}
+2018-03-01 17:03:44 - [debug]: [Core module] - LawsViewRenderer.renderByViewId with viewId Core/exception
+2018-03-01 17:03:44 - [debug]: [Core module] - LawsViewRenderer.renderByViewId with viewId Core/exception
+2018-03-01 17:03:44 - [hooks]: [Kamille.Hook] - Core_autoLawsConfig was called
+2018-03-01 17:03:44 - [hooks]: [Kamille.Hook] - Core_autoLawsConfig was called
+2018-03-01 17:03:44 - [hooks]: [Kamille.Hook] - Core_lazyJsInit_addCodeWrapper was called
+2018-03-01 17:03:44 - [hooks]: [Kamille.Hook] - Core_lazyJsInit_addCodeWrapper was called
+2018-03-01 17:03:44 - [hooks]: [Kamille.Hook] - Core_addLawsUtilProxyDecorators was called
+2018-03-01 17:03:44 - [hooks]: [Kamille.Hook] - Core_addLawsUtilProxyDecorators was called
+2018-03-01 17:03:44 - [hooks]: [Kamille.Hook] - Core_configureLawsUtil was called
+2018-03-01 17:03:44 - [hooks]: [Kamille.Hook] - Core_configureLawsUtil was called
+2018-03-01 17:03:44 - [trace]: [Kamille.LawsUtil] - trace with theme: bootstrapv4, viewId: Core/exception (/config/laws/Core/exception.conf.php):
+- layout: splash/default
+- widgets: 
+----- id: main.exception; tplName: Core/Exception/default
+2018-03-01 17:03:44 - [trace]: [Kamille.LawsUtil] - trace with theme: bootstrapv4, viewId: Core/exception (/config/laws/Core/exception.conf.php):
+- layout: splash/default
+- widgets: 
+----- id: main.exception; tplName: Core/Exception/default
+2018-03-01 17:03:44 - [debug]: [Kamille.Layout] - Rendering layout splash/default
+2018-03-01 17:03:44 - [debug]: [Kamille.Layout] - Rendering layout splash/default
+2018-03-01 17:03:44 - [page.perf]: apache2handler-/theme/bootstrapv4/dist/js/bootstrap.min.js--0.114--1176496
+2018-03-01 17:03:44 - [page.perf]: apache2handler-/theme/bootstrapv4/assets/js/vendor/popper.min.js--0.113--1176456
+2018-03-01 17:04:18 - [debug]: [Core module] - WebApplicationHandler.handle with uri: /bootstrap-contact
+2018-03-01 17:04:18 - [hooks]: [Kamille.Hook] - Core_onSiteConfigured was called
+2018-03-01 17:04:18 - [hooks]: [Kamille.Hook] - Core_feedAjaxUri2Controllers was called
+2018-03-01 17:04:18 - [hooks]: [Kamille.Hook] - Core_feedEarlyRouter was called
+2018-03-01 17:04:18 - [hooks]: [Kamille.Hook] - Core_configureRoutsyRouter was called
+2018-03-01 17:04:18 - [debug]: [Kamille.RoutsyRouter] - routeId MyApp_bootstrap_contact matched; fileName: routes; pattern: /bootstrap-contact
+2018-03-01 17:04:18 - [debug]: [Kamille.RouterRequestListener] - Router matched: Kamille\Utils\Routsy\RoutsyRouter, controller: Controller\ThisApp\Bootstrap\ThreePages\ContactPageController:render
+2018-03-01 17:04:18 - [hooks]: [Kamille.Hook] - Core_Controller_onControllerStringReceived was called
+2018-03-01 17:04:18 - [trace]: [Kamille] - ClawsRenderer: trace with theme: bootstrapv4
+- layout: sandwich_1c/default
+- widgets: 
+----- id: maincontent.body; tplName: ThisApp/MainContent/ContactPage/default
+----- id: top.menu; tplName: ThisApp/Top/Menu/default
+2018-03-01 17:04:18 - [debug]: [Kamille.Layout] - Rendering layout sandwich_1c/default
+2018-03-01 17:04:18 - [page.perf]: apache2handler-/bootstrap-contact--0.141--1117824
+2018-03-01 17:04:18 - [debug]: [Core module] - WebApplicationHandler.handle with uri: /theme/bootstrapv4/dist/js/bootstrap.min.js
+2018-03-01 17:04:18 - [debug]: [Core module] - WebApplicationHandler.handle with uri: /theme/bootstrapv4/assets/js/vendor/popper.min.js
+2018-03-01 17:04:18 - [hooks]: [Kamille.Hook] - Core_onSiteConfigured was called
+2018-03-01 17:04:18 - [hooks]: [Kamille.Hook] - Core_onSiteConfigured was called
+2018-03-01 17:04:18 - [hooks]: [Kamille.Hook] - Core_feedAjaxUri2Controllers was called
+2018-03-01 17:04:18 - [hooks]: [Kamille.Hook] - Core_feedAjaxUri2Controllers was called
+2018-03-01 17:04:18 - [hooks]: [Kamille.Hook] - Core_feedEarlyRouter was called
+2018-03-01 17:04:18 - [hooks]: [Kamille.Hook] - Core_feedEarlyRouter was called
+2018-03-01 17:04:18 - [hooks]: [Kamille.Hook] - Core_configureRoutsyRouter was called
+2018-03-01 17:04:18 - [error]: [Core module] - WebApplicationHandler: exception caught with message: 'The controller parameter was not found in the request /theme/bootstrapv4/assets/js/vendor/popper.min.js'. uri was /theme/bootstrapv4/assets/js/vendor/popper.min.js, redispatching to the fallback loop
+2018-03-01 17:04:18 - [hooks]: [Kamille.Hook] - Core_configureRoutsyRouter was called
+2018-03-01 17:04:18 - [debug]: [Kamille.RouterRequestListener] - Router matched: Module\Core\Architecture\Router\EarlyRouter, controller: Controller\Core\ExceptionController:render
+2018-03-01 17:04:18 - [hooks]: [Kamille.Hook] - Core_Controller_onControllerStringReceived was called
+2018-03-01 17:04:18 - [error]: [Core module] - WebApplicationHandler: exception caught with message: 'The controller parameter was not found in the request /theme/bootstrapv4/dist/js/bootstrap.min.js'. uri was /theme/bootstrapv4/dist/js/bootstrap.min.js, redispatching to the fallback loop
+2018-03-01 17:04:18 - [error]: [Ekom module]: ExceptionController: exception 'Kamille\Architecture\RequestListener\Exception\RequestListenerException' with message 'The controller parameter was not found in the request /theme/bootstrapv4/assets/js/vendor/popper.min.js' in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/RequestListener/Web/ControllerExecuterRequestListener.php:58
+Stack trace:
+#0 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/Application/Web/WebApplication.php(132): Kamille\Architecture\RequestListener\Web\ControllerExecuterRequestListener->listen(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#1 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-modules/Core/ApplicationHandler/WebApplicationHandler.php(137): Kamille\Architecture\Application\Web\WebApplication->handleRequest(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#2 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/www/index.php(26): Module\Core\ApplicationHandler\WebApplicationHandler->handle(Object(Kamille\Architecture\Application\Web\WebApplication))
+#3 {main}
+2018-03-01 17:04:18 - [debug]: [Kamille.RouterRequestListener] - Router matched: Module\Core\Architecture\Router\EarlyRouter, controller: Controller\Core\ExceptionController:render
+2018-03-01 17:04:18 - [hooks]: [Kamille.Hook] - Core_Controller_onControllerStringReceived was called
+2018-03-01 17:04:18 - [debug]: [Core module] - LawsViewRenderer.renderByViewId with viewId Core/exception
+2018-03-01 17:04:18 - [hooks]: [Kamille.Hook] - Core_autoLawsConfig was called
+2018-03-01 17:04:18 - [hooks]: [Kamille.Hook] - Core_lazyJsInit_addCodeWrapper was called
+2018-03-01 17:04:18 - [error]: [Ekom module]: ExceptionController: exception 'Kamille\Architecture\RequestListener\Exception\RequestListenerException' with message 'The controller parameter was not found in the request /theme/bootstrapv4/dist/js/bootstrap.min.js' in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/RequestListener/Web/ControllerExecuterRequestListener.php:58
+Stack trace:
+#0 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/Application/Web/WebApplication.php(132): Kamille\Architecture\RequestListener\Web\ControllerExecuterRequestListener->listen(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#1 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-modules/Core/ApplicationHandler/WebApplicationHandler.php(137): Kamille\Architecture\Application\Web\WebApplication->handleRequest(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#2 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/www/index.php(26): Module\Core\ApplicationHandler\WebApplicationHandler->handle(Object(Kamille\Architecture\Application\Web\WebApplication))
+#3 {main}
+2018-03-01 17:04:18 - [hooks]: [Kamille.Hook] - Core_addLawsUtilProxyDecorators was called
+2018-03-01 17:04:18 - [debug]: [Core module] - LawsViewRenderer.renderByViewId with viewId Core/exception
+2018-03-01 17:04:18 - [hooks]: [Kamille.Hook] - Core_autoLawsConfig was called
+2018-03-01 17:04:18 - [hooks]: [Kamille.Hook] - Core_configureLawsUtil was called
+2018-03-01 17:04:18 - [hooks]: [Kamille.Hook] - Core_lazyJsInit_addCodeWrapper was called
+2018-03-01 17:04:18 - [trace]: [Kamille.LawsUtil] - trace with theme: bootstrapv4, viewId: Core/exception (/config/laws/Core/exception.conf.php):
+- layout: splash/default
+- widgets: 
+----- id: main.exception; tplName: Core/Exception/default
+2018-03-01 17:04:18 - [hooks]: [Kamille.Hook] - Core_addLawsUtilProxyDecorators was called
+2018-03-01 17:04:18 - [hooks]: [Kamille.Hook] - Core_configureLawsUtil was called
+2018-03-01 17:04:18 - [debug]: [Kamille.Layout] - Rendering layout splash/default
+2018-03-01 17:04:18 - [trace]: [Kamille.LawsUtil] - trace with theme: bootstrapv4, viewId: Core/exception (/config/laws/Core/exception.conf.php):
+- layout: splash/default
+- widgets: 
+----- id: main.exception; tplName: Core/Exception/default
+2018-03-01 17:04:18 - [debug]: [Kamille.Layout] - Rendering layout splash/default
+2018-03-01 17:04:18 - [page.perf]: apache2handler-/theme/bootstrapv4/assets/js/vendor/popper.min.js--0.032--1176456
+2018-03-01 17:04:18 - [page.perf]: apache2handler-/theme/bootstrapv4/dist/js/bootstrap.min.js--0.033--1176496
+2018-03-01 17:04:21 - [debug]: [Core module] - WebApplicationHandler.handle with uri: /bootstrap-contact
+2018-03-01 17:04:21 - [hooks]: [Kamille.Hook] - Core_onSiteConfigured was called
+2018-03-01 17:04:21 - [hooks]: [Kamille.Hook] - Core_feedAjaxUri2Controllers was called
+2018-03-01 17:04:21 - [hooks]: [Kamille.Hook] - Core_feedEarlyRouter was called
+2018-03-01 17:04:21 - [hooks]: [Kamille.Hook] - Core_configureRoutsyRouter was called
+2018-03-01 17:04:21 - [debug]: [Kamille.RoutsyRouter] - routeId MyApp_bootstrap_contact matched; fileName: routes; pattern: /bootstrap-contact
+2018-03-01 17:04:21 - [debug]: [Kamille.RouterRequestListener] - Router matched: Kamille\Utils\Routsy\RoutsyRouter, controller: Controller\ThisApp\Bootstrap\ThreePages\ContactPageController:render
+2018-03-01 17:04:21 - [hooks]: [Kamille.Hook] - Core_Controller_onControllerStringReceived was called
+2018-03-01 17:04:21 - [trace]: [Kamille] - ClawsRenderer: trace with theme: bootstrapv4
+- layout: sandwich_1c/default
+- widgets: 
+----- id: maincontent.body; tplName: ThisApp/MainContent/ContactPage/default
+----- id: top.menu; tplName: ThisApp/Top/Menu/default
+2018-03-01 17:04:21 - [debug]: [Kamille.Layout] - Rendering layout sandwich_1c/default
+2018-03-01 17:04:21 - [page.perf]: apache2handler-/bootstrap-contact--0.073--1121336
+2018-03-01 17:04:21 - [debug]: [Core module] - WebApplicationHandler.handle with uri: /theme/bootstrapv4/dist/js/bootstrap.min.js
+2018-03-01 17:04:21 - [debug]: [Core module] - WebApplicationHandler.handle with uri: /theme/bootstrapv4/assets/js/vendor/popper.min.js
+2018-03-01 17:04:21 - [hooks]: [Kamille.Hook] - Core_onSiteConfigured was called
+2018-03-01 17:04:21 - [hooks]: [Kamille.Hook] - Core_feedAjaxUri2Controllers was called
+2018-03-01 17:04:21 - [hooks]: [Kamille.Hook] - Core_feedEarlyRouter was called
+2018-03-01 17:04:21 - [hooks]: [Kamille.Hook] - Core_configureRoutsyRouter was called
+2018-03-01 17:04:21 - [error]: [Core module] - WebApplicationHandler: exception caught with message: 'The controller parameter was not found in the request /theme/bootstrapv4/dist/js/bootstrap.min.js'. uri was /theme/bootstrapv4/dist/js/bootstrap.min.js, redispatching to the fallback loop
+2018-03-01 17:04:21 - [debug]: [Kamille.RouterRequestListener] - Router matched: Module\Core\Architecture\Router\EarlyRouter, controller: Controller\Core\ExceptionController:render
+2018-03-01 17:04:21 - [hooks]: [Kamille.Hook] - Core_Controller_onControllerStringReceived was called
+2018-03-01 17:04:21 - [hooks]: [Kamille.Hook] - Core_onSiteConfigured was called
+2018-03-01 17:04:21 - [hooks]: [Kamille.Hook] - Core_feedAjaxUri2Controllers was called
+2018-03-01 17:04:21 - [hooks]: [Kamille.Hook] - Core_feedEarlyRouter was called
+2018-03-01 17:04:21 - [error]: [Ekom module]: ExceptionController: exception 'Kamille\Architecture\RequestListener\Exception\RequestListenerException' with message 'The controller parameter was not found in the request /theme/bootstrapv4/dist/js/bootstrap.min.js' in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/RequestListener/Web/ControllerExecuterRequestListener.php:58
+Stack trace:
+#0 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/Application/Web/WebApplication.php(132): Kamille\Architecture\RequestListener\Web\ControllerExecuterRequestListener->listen(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#1 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-modules/Core/ApplicationHandler/WebApplicationHandler.php(137): Kamille\Architecture\Application\Web\WebApplication->handleRequest(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#2 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/www/index.php(26): Module\Core\ApplicationHandler\WebApplicationHandler->handle(Object(Kamille\Architecture\Application\Web\WebApplication))
+#3 {main}
+2018-03-01 17:04:21 - [debug]: [Core module] - LawsViewRenderer.renderByViewId with viewId Core/exception
+2018-03-01 17:04:21 - [hooks]: [Kamille.Hook] - Core_autoLawsConfig was called
+2018-03-01 17:04:21 - [hooks]: [Kamille.Hook] - Core_configureRoutsyRouter was called
+2018-03-01 17:04:21 - [hooks]: [Kamille.Hook] - Core_lazyJsInit_addCodeWrapper was called
+2018-03-01 17:04:21 - [hooks]: [Kamille.Hook] - Core_addLawsUtilProxyDecorators was called
+2018-03-01 17:04:21 - [hooks]: [Kamille.Hook] - Core_configureLawsUtil was called
+2018-03-01 17:04:21 - [error]: [Core module] - WebApplicationHandler: exception caught with message: 'The controller parameter was not found in the request /theme/bootstrapv4/assets/js/vendor/popper.min.js'. uri was /theme/bootstrapv4/assets/js/vendor/popper.min.js, redispatching to the fallback loop
+2018-03-01 17:04:21 - [debug]: [Kamille.RouterRequestListener] - Router matched: Module\Core\Architecture\Router\EarlyRouter, controller: Controller\Core\ExceptionController:render
+2018-03-01 17:04:21 - [hooks]: [Kamille.Hook] - Core_Controller_onControllerStringReceived was called
+2018-03-01 17:04:21 - [trace]: [Kamille.LawsUtil] - trace with theme: bootstrapv4, viewId: Core/exception (/config/laws/Core/exception.conf.php):
+- layout: splash/default
+- widgets: 
+----- id: main.exception; tplName: Core/Exception/default
+2018-03-01 17:04:21 - [error]: [Ekom module]: ExceptionController: exception 'Kamille\Architecture\RequestListener\Exception\RequestListenerException' with message 'The controller parameter was not found in the request /theme/bootstrapv4/assets/js/vendor/popper.min.js' in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/RequestListener/Web/ControllerExecuterRequestListener.php:58
+Stack trace:
+#0 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/Application/Web/WebApplication.php(132): Kamille\Architecture\RequestListener\Web\ControllerExecuterRequestListener->listen(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#1 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-modules/Core/ApplicationHandler/WebApplicationHandler.php(137): Kamille\Architecture\Application\Web\WebApplication->handleRequest(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#2 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/www/index.php(26): Module\Core\ApplicationHandler\WebApplicationHandler->handle(Object(Kamille\Architecture\Application\Web\WebApplication))
+#3 {main}
+2018-03-01 17:04:21 - [debug]: [Core module] - LawsViewRenderer.renderByViewId with viewId Core/exception
+2018-03-01 17:04:21 - [debug]: [Kamille.Layout] - Rendering layout splash/default
+2018-03-01 17:04:21 - [hooks]: [Kamille.Hook] - Core_autoLawsConfig was called
+2018-03-01 17:04:21 - [hooks]: [Kamille.Hook] - Core_lazyJsInit_addCodeWrapper was called
+2018-03-01 17:04:21 - [hooks]: [Kamille.Hook] - Core_addLawsUtilProxyDecorators was called
+2018-03-01 17:04:21 - [page.perf]: apache2handler-/theme/bootstrapv4/dist/js/bootstrap.min.js--0.026--1176496
+2018-03-01 17:04:21 - [hooks]: [Kamille.Hook] - Core_configureLawsUtil was called
+2018-03-01 17:04:21 - [trace]: [Kamille.LawsUtil] - trace with theme: bootstrapv4, viewId: Core/exception (/config/laws/Core/exception.conf.php):
+- layout: splash/default
+- widgets: 
+----- id: main.exception; tplName: Core/Exception/default
+2018-03-01 17:04:21 - [debug]: [Kamille.Layout] - Rendering layout splash/default
+2018-03-01 17:04:21 - [page.perf]: apache2handler-/theme/bootstrapv4/assets/js/vendor/popper.min.js--0.035--1176456
+2018-03-01 17:06:56 - [debug]: [Core module] - WebApplicationHandler.handle with uri: /bootstrap-contact
+2018-03-01 17:06:56 - [hooks]: [Kamille.Hook] - Core_onSiteConfigured was called
+2018-03-01 17:06:56 - [hooks]: [Kamille.Hook] - Core_feedAjaxUri2Controllers was called
+2018-03-01 17:06:56 - [hooks]: [Kamille.Hook] - Core_feedEarlyRouter was called
+2018-03-01 17:06:56 - [hooks]: [Kamille.Hook] - Core_configureRoutsyRouter was called
+2018-03-01 17:06:56 - [debug]: [Kamille.RoutsyRouter] - routeId MyApp_bootstrap_contact matched; fileName: routes; pattern: /bootstrap-contact
+2018-03-01 17:06:56 - [debug]: [Kamille.RouterRequestListener] - Router matched: Kamille\Utils\Routsy\RoutsyRouter, controller: Controller\ThisApp\Bootstrap\ThreePages\ContactPageController:render
+2018-03-01 17:06:56 - [hooks]: [Kamille.Hook] - Core_Controller_onControllerStringReceived was called
+2018-03-01 17:06:56 - [trace]: [Kamille] - ClawsRenderer: trace with theme: bootstrapv4
+- layout: sandwich_1c/default
+- widgets: 
+----- id: maincontent.body; tplName: ThisApp/MainContent/ContactPage/default
+----- id: top.menu; tplName: ThisApp/Top/Menu/default
+2018-03-01 17:06:56 - [debug]: [Kamille.Layout] - Rendering layout sandwich_1c/default
+2018-03-01 17:06:56 - [page.perf]: apache2handler-/bootstrap-contact--0.407--1122096
+2018-03-01 17:06:56 - [debug]: [Core module] - WebApplicationHandler.handle with uri: /theme/bootstrapv4/assets/js/vendor/popper.min.js
+2018-03-01 17:06:56 - [debug]: [Core module] - WebApplicationHandler.handle with uri: /theme/bootstrapv4/dist/js/bootstrap.min.js
+2018-03-01 17:06:56 - [hooks]: [Kamille.Hook] - Core_onSiteConfigured was called
+2018-03-01 17:06:56 - [hooks]: [Kamille.Hook] - Core_feedAjaxUri2Controllers was called
+2018-03-01 17:06:56 - [hooks]: [Kamille.Hook] - Core_feedEarlyRouter was called
+2018-03-01 17:06:56 - [hooks]: [Kamille.Hook] - Core_onSiteConfigured was called
+2018-03-01 17:06:56 - [hooks]: [Kamille.Hook] - Core_feedAjaxUri2Controllers was called
+2018-03-01 17:06:56 - [hooks]: [Kamille.Hook] - Core_feedEarlyRouter was called
+2018-03-01 17:06:56 - [hooks]: [Kamille.Hook] - Core_configureRoutsyRouter was called
+2018-03-01 17:06:56 - [error]: [Core module] - WebApplicationHandler: exception caught with message: 'The controller parameter was not found in the request /theme/bootstrapv4/assets/js/vendor/popper.min.js'. uri was /theme/bootstrapv4/assets/js/vendor/popper.min.js, redispatching to the fallback loop
+2018-03-01 17:06:56 - [hooks]: [Kamille.Hook] - Core_configureRoutsyRouter was called
+2018-03-01 17:06:56 - [debug]: [Kamille.RouterRequestListener] - Router matched: Module\Core\Architecture\Router\EarlyRouter, controller: Controller\Core\ExceptionController:render
+2018-03-01 17:06:56 - [hooks]: [Kamille.Hook] - Core_Controller_onControllerStringReceived was called
+2018-03-01 17:06:56 - [error]: [Core module] - WebApplicationHandler: exception caught with message: 'The controller parameter was not found in the request /theme/bootstrapv4/dist/js/bootstrap.min.js'. uri was /theme/bootstrapv4/dist/js/bootstrap.min.js, redispatching to the fallback loop
+2018-03-01 17:06:56 - [debug]: [Kamille.RouterRequestListener] - Router matched: Module\Core\Architecture\Router\EarlyRouter, controller: Controller\Core\ExceptionController:render
+2018-03-01 17:06:56 - [hooks]: [Kamille.Hook] - Core_Controller_onControllerStringReceived was called
+2018-03-01 17:06:56 - [error]: [Ekom module]: ExceptionController: exception 'Kamille\Architecture\RequestListener\Exception\RequestListenerException' with message 'The controller parameter was not found in the request /theme/bootstrapv4/assets/js/vendor/popper.min.js' in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/RequestListener/Web/ControllerExecuterRequestListener.php:58
+Stack trace:
+#0 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/Application/Web/WebApplication.php(132): Kamille\Architecture\RequestListener\Web\ControllerExecuterRequestListener->listen(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#1 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-modules/Core/ApplicationHandler/WebApplicationHandler.php(137): Kamille\Architecture\Application\Web\WebApplication->handleRequest(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#2 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/www/index.php(26): Module\Core\ApplicationHandler\WebApplicationHandler->handle(Object(Kamille\Architecture\Application\Web\WebApplication))
+#3 {main}
+2018-03-01 17:06:56 - [error]: [Ekom module]: ExceptionController: exception 'Kamille\Architecture\RequestListener\Exception\RequestListenerException' with message 'The controller parameter was not found in the request /theme/bootstrapv4/dist/js/bootstrap.min.js' in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/RequestListener/Web/ControllerExecuterRequestListener.php:58
+Stack trace:
+#0 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/Application/Web/WebApplication.php(132): Kamille\Architecture\RequestListener\Web\ControllerExecuterRequestListener->listen(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#1 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-modules/Core/ApplicationHandler/WebApplicationHandler.php(137): Kamille\Architecture\Application\Web\WebApplication->handleRequest(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#2 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/www/index.php(26): Module\Core\ApplicationHandler\WebApplicationHandler->handle(Object(Kamille\Architecture\Application\Web\WebApplication))
+#3 {main}
+2018-03-01 17:06:56 - [debug]: [Core module] - LawsViewRenderer.renderByViewId with viewId Core/exception
+2018-03-01 17:06:56 - [debug]: [Core module] - LawsViewRenderer.renderByViewId with viewId Core/exception
+2018-03-01 17:06:56 - [hooks]: [Kamille.Hook] - Core_autoLawsConfig was called
+2018-03-01 17:06:56 - [hooks]: [Kamille.Hook] - Core_autoLawsConfig was called
+2018-03-01 17:06:56 - [hooks]: [Kamille.Hook] - Core_lazyJsInit_addCodeWrapper was called
+2018-03-01 17:06:56 - [hooks]: [Kamille.Hook] - Core_lazyJsInit_addCodeWrapper was called
+2018-03-01 17:06:56 - [hooks]: [Kamille.Hook] - Core_addLawsUtilProxyDecorators was called
+2018-03-01 17:06:56 - [hooks]: [Kamille.Hook] - Core_addLawsUtilProxyDecorators was called
+2018-03-01 17:06:56 - [hooks]: [Kamille.Hook] - Core_configureLawsUtil was called
+2018-03-01 17:06:56 - [hooks]: [Kamille.Hook] - Core_configureLawsUtil was called
+2018-03-01 17:06:56 - [trace]: [Kamille.LawsUtil] - trace with theme: bootstrapv4, viewId: Core/exception (/config/laws/Core/exception.conf.php):
+- layout: splash/default
+- widgets: 
+----- id: main.exception; tplName: Core/Exception/default
+2018-03-01 17:06:56 - [trace]: [Kamille.LawsUtil] - trace with theme: bootstrapv4, viewId: Core/exception (/config/laws/Core/exception.conf.php):
+- layout: splash/default
+- widgets: 
+----- id: main.exception; tplName: Core/Exception/default
+2018-03-01 17:06:56 - [debug]: [Kamille.Layout] - Rendering layout splash/default
+2018-03-01 17:06:56 - [debug]: [Kamille.Layout] - Rendering layout splash/default
+2018-03-01 17:06:56 - [page.perf]: apache2handler-/theme/bootstrapv4/dist/js/bootstrap.min.js--0.144--1176496
+2018-03-01 17:06:56 - [page.perf]: apache2handler-/theme/bootstrapv4/assets/js/vendor/popper.min.js--0.144--1176456
+2018-03-01 17:08:24 - [debug]: [Core module] - WebApplicationHandler.handle with uri: /bootstrap-contact
+2018-03-01 17:08:24 - [hooks]: [Kamille.Hook] - Core_onSiteConfigured was called
+2018-03-01 17:08:24 - [hooks]: [Kamille.Hook] - Core_feedAjaxUri2Controllers was called
+2018-03-01 17:08:24 - [hooks]: [Kamille.Hook] - Core_feedEarlyRouter was called
+2018-03-01 17:08:24 - [hooks]: [Kamille.Hook] - Core_configureRoutsyRouter was called
+2018-03-01 17:08:24 - [debug]: [Kamille.RoutsyRouter] - routeId MyApp_bootstrap_contact matched; fileName: routes; pattern: /bootstrap-contact
+2018-03-01 17:08:24 - [debug]: [Kamille.RouterRequestListener] - Router matched: Kamille\Utils\Routsy\RoutsyRouter, controller: Controller\ThisApp\Bootstrap\ThreePages\ContactPageController:render
+2018-03-01 17:08:24 - [hooks]: [Kamille.Hook] - Core_Controller_onControllerStringReceived was called
+2018-03-01 17:08:24 - [trace]: [Kamille] - ClawsRenderer: trace with theme: bootstrapv4
+- layout: sandwich_1c/default
+- widgets: 
+----- id: maincontent.body; tplName: ThisApp/MainContent/ContactPage/default
+----- id: top.menu; tplName: ThisApp/Top/Menu/default
+2018-03-01 17:08:24 - [debug]: [Kamille.Layout] - Rendering layout sandwich_1c/default
+2018-03-01 17:08:24 - [page.perf]: apache2handler-/bootstrap-contact--0.363--1122096
+2018-03-01 17:08:24 - [debug]: [Core module] - WebApplicationHandler.handle with uri: /theme/bootstrapv4/assets/js/vendor/popper.min.js
+2018-03-01 17:08:24 - [debug]: [Core module] - WebApplicationHandler.handle with uri: /theme/bootstrapv4/dist/js/bootstrap.min.js
+2018-03-01 17:08:24 - [hooks]: [Kamille.Hook] - Core_onSiteConfigured was called
+2018-03-01 17:08:24 - [hooks]: [Kamille.Hook] - Core_feedAjaxUri2Controllers was called
+2018-03-01 17:08:24 - [hooks]: [Kamille.Hook] - Core_feedEarlyRouter was called
+2018-03-01 17:08:24 - [hooks]: [Kamille.Hook] - Core_configureRoutsyRouter was called
+2018-03-01 17:08:24 - [hooks]: [Kamille.Hook] - Core_onSiteConfigured was called
+2018-03-01 17:08:24 - [hooks]: [Kamille.Hook] - Core_feedAjaxUri2Controllers was called
+2018-03-01 17:08:24 - [error]: [Core module] - WebApplicationHandler: exception caught with message: 'The controller parameter was not found in the request /theme/bootstrapv4/assets/js/vendor/popper.min.js'. uri was /theme/bootstrapv4/assets/js/vendor/popper.min.js, redispatching to the fallback loop
+2018-03-01 17:08:24 - [hooks]: [Kamille.Hook] - Core_feedEarlyRouter was called
+2018-03-01 17:08:24 - [debug]: [Kamille.RouterRequestListener] - Router matched: Module\Core\Architecture\Router\EarlyRouter, controller: Controller\Core\ExceptionController:render
+2018-03-01 17:08:24 - [hooks]: [Kamille.Hook] - Core_Controller_onControllerStringReceived was called
+2018-03-01 17:08:24 - [error]: [Ekom module]: ExceptionController: exception 'Kamille\Architecture\RequestListener\Exception\RequestListenerException' with message 'The controller parameter was not found in the request /theme/bootstrapv4/assets/js/vendor/popper.min.js' in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/RequestListener/Web/ControllerExecuterRequestListener.php:58
+Stack trace:
+#0 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/Application/Web/WebApplication.php(132): Kamille\Architecture\RequestListener\Web\ControllerExecuterRequestListener->listen(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#1 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-modules/Core/ApplicationHandler/WebApplicationHandler.php(137): Kamille\Architecture\Application\Web\WebApplication->handleRequest(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#2 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/www/index.php(26): Module\Core\ApplicationHandler\WebApplicationHandler->handle(Object(Kamille\Architecture\Application\Web\WebApplication))
+#3 {main}
+2018-03-01 17:08:24 - [hooks]: [Kamille.Hook] - Core_configureRoutsyRouter was called
+2018-03-01 17:08:24 - [error]: [Core module] - WebApplicationHandler: exception caught with message: 'The controller parameter was not found in the request /theme/bootstrapv4/dist/js/bootstrap.min.js'. uri was /theme/bootstrapv4/dist/js/bootstrap.min.js, redispatching to the fallback loop
+2018-03-01 17:08:24 - [debug]: [Core module] - LawsViewRenderer.renderByViewId with viewId Core/exception
+2018-03-01 17:08:24 - [debug]: [Kamille.RouterRequestListener] - Router matched: Module\Core\Architecture\Router\EarlyRouter, controller: Controller\Core\ExceptionController:render
+2018-03-01 17:08:24 - [hooks]: [Kamille.Hook] - Core_Controller_onControllerStringReceived was called
+2018-03-01 17:08:24 - [hooks]: [Kamille.Hook] - Core_autoLawsConfig was called
+2018-03-01 17:08:24 - [error]: [Ekom module]: ExceptionController: exception 'Kamille\Architecture\RequestListener\Exception\RequestListenerException' with message 'The controller parameter was not found in the request /theme/bootstrapv4/dist/js/bootstrap.min.js' in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/RequestListener/Web/ControllerExecuterRequestListener.php:58
+Stack trace:
+#0 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/Application/Web/WebApplication.php(132): Kamille\Architecture\RequestListener\Web\ControllerExecuterRequestListener->listen(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#1 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-modules/Core/ApplicationHandler/WebApplicationHandler.php(137): Kamille\Architecture\Application\Web\WebApplication->handleRequest(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#2 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/www/index.php(26): Module\Core\ApplicationHandler\WebApplicationHandler->handle(Object(Kamille\Architecture\Application\Web\WebApplication))
+#3 {main}
+2018-03-01 17:08:24 - [debug]: [Core module] - LawsViewRenderer.renderByViewId with viewId Core/exception
+2018-03-01 17:08:24 - [hooks]: [Kamille.Hook] - Core_lazyJsInit_addCodeWrapper was called
+2018-03-01 17:08:24 - [hooks]: [Kamille.Hook] - Core_autoLawsConfig was called
+2018-03-01 17:08:24 - [hooks]: [Kamille.Hook] - Core_lazyJsInit_addCodeWrapper was called
+2018-03-01 17:08:24 - [hooks]: [Kamille.Hook] - Core_addLawsUtilProxyDecorators was called
+2018-03-01 17:08:24 - [hooks]: [Kamille.Hook] - Core_addLawsUtilProxyDecorators was called
+2018-03-01 17:08:24 - [hooks]: [Kamille.Hook] - Core_configureLawsUtil was called
+2018-03-01 17:08:24 - [hooks]: [Kamille.Hook] - Core_configureLawsUtil was called
+2018-03-01 17:08:24 - [trace]: [Kamille.LawsUtil] - trace with theme: bootstrapv4, viewId: Core/exception (/config/laws/Core/exception.conf.php):
+- layout: splash/default
+- widgets: 
+----- id: main.exception; tplName: Core/Exception/default
+2018-03-01 17:08:24 - [trace]: [Kamille.LawsUtil] - trace with theme: bootstrapv4, viewId: Core/exception (/config/laws/Core/exception.conf.php):
+- layout: splash/default
+- widgets: 
+----- id: main.exception; tplName: Core/Exception/default
+2018-03-01 17:08:24 - [debug]: [Kamille.Layout] - Rendering layout splash/default
+2018-03-01 17:08:24 - [debug]: [Kamille.Layout] - Rendering layout splash/default
+2018-03-01 17:08:24 - [page.perf]: apache2handler-/theme/bootstrapv4/assets/js/vendor/popper.min.js--0.113--1176456
+2018-03-01 17:08:24 - [page.perf]: apache2handler-/theme/bootstrapv4/dist/js/bootstrap.min.js--0.118--1176496
+2018-03-01 17:08:50 - [debug]: [Core module] - WebApplicationHandler.handle with uri: /bootstrap-contact
+2018-03-01 17:08:50 - [hooks]: [Kamille.Hook] - Core_onSiteConfigured was called
+2018-03-01 17:08:50 - [hooks]: [Kamille.Hook] - Core_feedAjaxUri2Controllers was called
+2018-03-01 17:08:50 - [hooks]: [Kamille.Hook] - Core_feedEarlyRouter was called
+2018-03-01 17:08:50 - [hooks]: [Kamille.Hook] - Core_configureRoutsyRouter was called
+2018-03-01 17:08:50 - [debug]: [Kamille.RoutsyRouter] - routeId MyApp_bootstrap_contact matched; fileName: routes; pattern: /bootstrap-contact
+2018-03-01 17:08:50 - [debug]: [Kamille.RouterRequestListener] - Router matched: Kamille\Utils\Routsy\RoutsyRouter, controller: Controller\ThisApp\Bootstrap\ThreePages\ContactPageController:render
+2018-03-01 17:08:50 - [hooks]: [Kamille.Hook] - Core_Controller_onControllerStringReceived was called
+2018-03-01 17:08:50 - [trace]: [Kamille] - ClawsRenderer: trace with theme: bootstrapv4
+- layout: sandwich_1c/default
+- widgets: 
+----- id: maincontent.body; tplName: ThisApp/MainContent/ContactPage/default
+----- id: top.menu; tplName: ThisApp/Top/Menu/default
+2018-03-01 17:08:50 - [debug]: [Kamille.Layout] - Rendering layout sandwich_1c/default
+2018-03-01 17:08:50 - [page.perf]: apache2handler-/bootstrap-contact--0.069--1122096
+2018-03-01 17:08:50 - [debug]: [Core module] - WebApplicationHandler.handle with uri: /theme/bootstrapv4/assets/js/vendor/popper.min.js
+2018-03-01 17:08:50 - [debug]: [Core module] - WebApplicationHandler.handle with uri: /theme/bootstrapv4/dist/js/bootstrap.min.js
+2018-03-01 17:08:50 - [hooks]: [Kamille.Hook] - Core_onSiteConfigured was called
+2018-03-01 17:08:50 - [hooks]: [Kamille.Hook] - Core_feedAjaxUri2Controllers was called
+2018-03-01 17:08:50 - [hooks]: [Kamille.Hook] - Core_feedEarlyRouter was called
+2018-03-01 17:08:50 - [hooks]: [Kamille.Hook] - Core_onSiteConfigured was called
+2018-03-01 17:08:50 - [hooks]: [Kamille.Hook] - Core_feedAjaxUri2Controllers was called
+2018-03-01 17:08:50 - [hooks]: [Kamille.Hook] - Core_feedEarlyRouter was called
+2018-03-01 17:08:50 - [hooks]: [Kamille.Hook] - Core_configureRoutsyRouter was called
+2018-03-01 17:08:50 - [error]: [Core module] - WebApplicationHandler: exception caught with message: 'The controller parameter was not found in the request /theme/bootstrapv4/assets/js/vendor/popper.min.js'. uri was /theme/bootstrapv4/assets/js/vendor/popper.min.js, redispatching to the fallback loop
+2018-03-01 17:08:50 - [debug]: [Kamille.RouterRequestListener] - Router matched: Module\Core\Architecture\Router\EarlyRouter, controller: Controller\Core\ExceptionController:render
+2018-03-01 17:08:50 - [hooks]: [Kamille.Hook] - Core_Controller_onControllerStringReceived was called
+2018-03-01 17:08:50 - [hooks]: [Kamille.Hook] - Core_configureRoutsyRouter was called
+2018-03-01 17:08:50 - [error]: [Ekom module]: ExceptionController: exception 'Kamille\Architecture\RequestListener\Exception\RequestListenerException' with message 'The controller parameter was not found in the request /theme/bootstrapv4/assets/js/vendor/popper.min.js' in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/RequestListener/Web/ControllerExecuterRequestListener.php:58
+Stack trace:
+#0 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/Application/Web/WebApplication.php(132): Kamille\Architecture\RequestListener\Web\ControllerExecuterRequestListener->listen(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#1 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-modules/Core/ApplicationHandler/WebApplicationHandler.php(137): Kamille\Architecture\Application\Web\WebApplication->handleRequest(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#2 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/www/index.php(26): Module\Core\ApplicationHandler\WebApplicationHandler->handle(Object(Kamille\Architecture\Application\Web\WebApplication))
+#3 {main}
+2018-03-01 17:08:50 - [debug]: [Core module] - LawsViewRenderer.renderByViewId with viewId Core/exception
+2018-03-01 17:08:50 - [error]: [Core module] - WebApplicationHandler: exception caught with message: 'The controller parameter was not found in the request /theme/bootstrapv4/dist/js/bootstrap.min.js'. uri was /theme/bootstrapv4/dist/js/bootstrap.min.js, redispatching to the fallback loop
+2018-03-01 17:08:50 - [hooks]: [Kamille.Hook] - Core_autoLawsConfig was called
+2018-03-01 17:08:50 - [debug]: [Kamille.RouterRequestListener] - Router matched: Module\Core\Architecture\Router\EarlyRouter, controller: Controller\Core\ExceptionController:render
+2018-03-01 17:08:50 - [hooks]: [Kamille.Hook] - Core_lazyJsInit_addCodeWrapper was called
+2018-03-01 17:08:50 - [hooks]: [Kamille.Hook] - Core_Controller_onControllerStringReceived was called
+2018-03-01 17:08:50 - [error]: [Ekom module]: ExceptionController: exception 'Kamille\Architecture\RequestListener\Exception\RequestListenerException' with message 'The controller parameter was not found in the request /theme/bootstrapv4/dist/js/bootstrap.min.js' in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/RequestListener/Web/ControllerExecuterRequestListener.php:58
+Stack trace:
+#0 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/Application/Web/WebApplication.php(132): Kamille\Architecture\RequestListener\Web\ControllerExecuterRequestListener->listen(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#1 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-modules/Core/ApplicationHandler/WebApplicationHandler.php(137): Kamille\Architecture\Application\Web\WebApplication->handleRequest(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#2 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/www/index.php(26): Module\Core\ApplicationHandler\WebApplicationHandler->handle(Object(Kamille\Architecture\Application\Web\WebApplication))
+#3 {main}
+2018-03-01 17:08:50 - [hooks]: [Kamille.Hook] - Core_addLawsUtilProxyDecorators was called
+2018-03-01 17:08:50 - [hooks]: [Kamille.Hook] - Core_configureLawsUtil was called
+2018-03-01 17:08:50 - [debug]: [Core module] - LawsViewRenderer.renderByViewId with viewId Core/exception
+2018-03-01 17:08:50 - [trace]: [Kamille.LawsUtil] - trace with theme: bootstrapv4, viewId: Core/exception (/config/laws/Core/exception.conf.php):
+- layout: splash/default
+- widgets: 
+----- id: main.exception; tplName: Core/Exception/default
+2018-03-01 17:08:50 - [hooks]: [Kamille.Hook] - Core_autoLawsConfig was called
+2018-03-01 17:08:50 - [hooks]: [Kamille.Hook] - Core_lazyJsInit_addCodeWrapper was called
+2018-03-01 17:08:50 - [debug]: [Kamille.Layout] - Rendering layout splash/default
+2018-03-01 17:08:50 - [hooks]: [Kamille.Hook] - Core_addLawsUtilProxyDecorators was called
+2018-03-01 17:08:50 - [hooks]: [Kamille.Hook] - Core_configureLawsUtil was called
+2018-03-01 17:08:50 - [trace]: [Kamille.LawsUtil] - trace with theme: bootstrapv4, viewId: Core/exception (/config/laws/Core/exception.conf.php):
+- layout: splash/default
+- widgets: 
+----- id: main.exception; tplName: Core/Exception/default
+2018-03-01 17:08:50 - [debug]: [Kamille.Layout] - Rendering layout splash/default
+2018-03-01 17:08:50 - [page.perf]: apache2handler-/theme/bootstrapv4/assets/js/vendor/popper.min.js--0.064--1176456
+2018-03-01 17:08:50 - [page.perf]: apache2handler-/theme/bootstrapv4/dist/js/bootstrap.min.js--0.063--1176496
+2018-03-01 17:09:37 - [debug]: [Core module] - WebApplicationHandler.handle with uri: /bootstrap-contact
+2018-03-01 17:09:37 - [hooks]: [Kamille.Hook] - Core_onSiteConfigured was called
+2018-03-01 17:09:37 - [hooks]: [Kamille.Hook] - Core_feedAjaxUri2Controllers was called
+2018-03-01 17:09:37 - [hooks]: [Kamille.Hook] - Core_feedEarlyRouter was called
+2018-03-01 17:09:37 - [hooks]: [Kamille.Hook] - Core_configureRoutsyRouter was called
+2018-03-01 17:09:37 - [debug]: [Kamille.RoutsyRouter] - routeId MyApp_bootstrap_contact matched; fileName: routes; pattern: /bootstrap-contact
+2018-03-01 17:09:37 - [debug]: [Kamille.RouterRequestListener] - Router matched: Kamille\Utils\Routsy\RoutsyRouter, controller: Controller\ThisApp\Bootstrap\ThreePages\ContactPageController:render
+2018-03-01 17:09:37 - [hooks]: [Kamille.Hook] - Core_Controller_onControllerStringReceived was called
+2018-03-01 17:09:38 - [trace]: [Kamille] - ClawsRenderer: trace with theme: bootstrapv4
+- layout: sandwich_1c/default
+- widgets: 
+----- id: maincontent.body; tplName: ThisApp/MainContent/ContactPage/default
+----- id: top.menu; tplName: ThisApp/Top/Menu/default
+2018-03-01 17:09:38 - [debug]: [Kamille.Layout] - Rendering layout sandwich_1c/default
+2018-03-01 17:09:38 - [page.perf]: apache2handler-/bootstrap-contact--0.330--1122096
+2018-03-01 17:09:38 - [debug]: [Core module] - WebApplicationHandler.handle with uri: /theme/bootstrapv4/dist/js/bootstrap.min.js
+2018-03-01 17:09:38 - [debug]: [Core module] - WebApplicationHandler.handle with uri: /theme/bootstrapv4/assets/js/vendor/popper.min.js
+2018-03-01 17:09:38 - [hooks]: [Kamille.Hook] - Core_onSiteConfigured was called
+2018-03-01 17:09:38 - [hooks]: [Kamille.Hook] - Core_feedAjaxUri2Controllers was called
+2018-03-01 17:09:38 - [hooks]: [Kamille.Hook] - Core_feedEarlyRouter was called
+2018-03-01 17:09:38 - [hooks]: [Kamille.Hook] - Core_configureRoutsyRouter was called
+2018-03-01 17:09:38 - [hooks]: [Kamille.Hook] - Core_onSiteConfigured was called
+2018-03-01 17:09:38 - [hooks]: [Kamille.Hook] - Core_feedAjaxUri2Controllers was called
+2018-03-01 17:09:38 - [error]: [Core module] - WebApplicationHandler: exception caught with message: 'The controller parameter was not found in the request /theme/bootstrapv4/dist/js/bootstrap.min.js'. uri was /theme/bootstrapv4/dist/js/bootstrap.min.js, redispatching to the fallback loop
+2018-03-01 17:09:38 - [hooks]: [Kamille.Hook] - Core_feedEarlyRouter was called
+2018-03-01 17:09:38 - [debug]: [Kamille.RouterRequestListener] - Router matched: Module\Core\Architecture\Router\EarlyRouter, controller: Controller\Core\ExceptionController:render
+2018-03-01 17:09:38 - [hooks]: [Kamille.Hook] - Core_Controller_onControllerStringReceived was called
+2018-03-01 17:09:38 - [error]: [Ekom module]: ExceptionController: exception 'Kamille\Architecture\RequestListener\Exception\RequestListenerException' with message 'The controller parameter was not found in the request /theme/bootstrapv4/dist/js/bootstrap.min.js' in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/RequestListener/Web/ControllerExecuterRequestListener.php:58
+Stack trace:
+#0 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/Application/Web/WebApplication.php(132): Kamille\Architecture\RequestListener\Web\ControllerExecuterRequestListener->listen(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#1 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-modules/Core/ApplicationHandler/WebApplicationHandler.php(137): Kamille\Architecture\Application\Web\WebApplication->handleRequest(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#2 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/www/index.php(26): Module\Core\ApplicationHandler\WebApplicationHandler->handle(Object(Kamille\Architecture\Application\Web\WebApplication))
+#3 {main}
+2018-03-01 17:09:38 - [hooks]: [Kamille.Hook] - Core_configureRoutsyRouter was called
+2018-03-01 17:09:38 - [error]: [Core module] - WebApplicationHandler: exception caught with message: 'The controller parameter was not found in the request /theme/bootstrapv4/assets/js/vendor/popper.min.js'. uri was /theme/bootstrapv4/assets/js/vendor/popper.min.js, redispatching to the fallback loop
+2018-03-01 17:09:38 - [debug]: [Core module] - LawsViewRenderer.renderByViewId with viewId Core/exception
+2018-03-01 17:09:38 - [debug]: [Kamille.RouterRequestListener] - Router matched: Module\Core\Architecture\Router\EarlyRouter, controller: Controller\Core\ExceptionController:render
+2018-03-01 17:09:38 - [hooks]: [Kamille.Hook] - Core_Controller_onControllerStringReceived was called
+2018-03-01 17:09:38 - [hooks]: [Kamille.Hook] - Core_autoLawsConfig was called
+2018-03-01 17:09:38 - [error]: [Ekom module]: ExceptionController: exception 'Kamille\Architecture\RequestListener\Exception\RequestListenerException' with message 'The controller parameter was not found in the request /theme/bootstrapv4/assets/js/vendor/popper.min.js' in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/RequestListener/Web/ControllerExecuterRequestListener.php:58
+Stack trace:
+#0 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/Application/Web/WebApplication.php(132): Kamille\Architecture\RequestListener\Web\ControllerExecuterRequestListener->listen(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#1 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-modules/Core/ApplicationHandler/WebApplicationHandler.php(137): Kamille\Architecture\Application\Web\WebApplication->handleRequest(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#2 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/www/index.php(26): Module\Core\ApplicationHandler\WebApplicationHandler->handle(Object(Kamille\Architecture\Application\Web\WebApplication))
+#3 {main}
+2018-03-01 17:09:38 - [debug]: [Core module] - LawsViewRenderer.renderByViewId with viewId Core/exception
+2018-03-01 17:09:38 - [hooks]: [Kamille.Hook] - Core_autoLawsConfig was called
+2018-03-01 17:09:38 - [hooks]: [Kamille.Hook] - Core_lazyJsInit_addCodeWrapper was called
+2018-03-01 17:09:38 - [hooks]: [Kamille.Hook] - Core_lazyJsInit_addCodeWrapper was called
+2018-03-01 17:09:38 - [hooks]: [Kamille.Hook] - Core_addLawsUtilProxyDecorators was called
+2018-03-01 17:09:38 - [hooks]: [Kamille.Hook] - Core_addLawsUtilProxyDecorators was called
+2018-03-01 17:09:38 - [hooks]: [Kamille.Hook] - Core_configureLawsUtil was called
+2018-03-01 17:09:38 - [hooks]: [Kamille.Hook] - Core_configureLawsUtil was called
+2018-03-01 17:09:38 - [trace]: [Kamille.LawsUtil] - trace with theme: bootstrapv4, viewId: Core/exception (/config/laws/Core/exception.conf.php):
+- layout: splash/default
+- widgets: 
+----- id: main.exception; tplName: Core/Exception/default
+2018-03-01 17:09:38 - [trace]: [Kamille.LawsUtil] - trace with theme: bootstrapv4, viewId: Core/exception (/config/laws/Core/exception.conf.php):
+- layout: splash/default
+- widgets: 
+----- id: main.exception; tplName: Core/Exception/default
+2018-03-01 17:09:38 - [debug]: [Kamille.Layout] - Rendering layout splash/default
+2018-03-01 17:09:38 - [debug]: [Kamille.Layout] - Rendering layout splash/default
+2018-03-01 17:09:38 - [page.perf]: apache2handler-/theme/bootstrapv4/assets/js/vendor/popper.min.js--0.106--1176456
+2018-03-01 17:09:38 - [page.perf]: apache2handler-/theme/bootstrapv4/dist/js/bootstrap.min.js--0.107--1176496
+2018-03-01 17:10:07 - [debug]: [Core module] - WebApplicationHandler.handle with uri: /bootstrap-contact
+2018-03-01 17:10:07 - [hooks]: [Kamille.Hook] - Core_onSiteConfigured was called
+2018-03-01 17:10:07 - [hooks]: [Kamille.Hook] - Core_feedAjaxUri2Controllers was called
+2018-03-01 17:10:07 - [hooks]: [Kamille.Hook] - Core_feedEarlyRouter was called
+2018-03-01 17:10:07 - [hooks]: [Kamille.Hook] - Core_configureRoutsyRouter was called
+2018-03-01 17:10:07 - [debug]: [Kamille.RoutsyRouter] - routeId MyApp_bootstrap_contact matched; fileName: routes; pattern: /bootstrap-contact
+2018-03-01 17:10:07 - [debug]: [Kamille.RouterRequestListener] - Router matched: Kamille\Utils\Routsy\RoutsyRouter, controller: Controller\ThisApp\Bootstrap\ThreePages\ContactPageController:render
+2018-03-01 17:10:07 - [hooks]: [Kamille.Hook] - Core_Controller_onControllerStringReceived was called
+2018-03-01 17:10:07 - [trace]: [Kamille] - ClawsRenderer: trace with theme: bootstrapv4
+- layout: sandwich_1c/default
+- widgets: 
+----- id: maincontent.body; tplName: ThisApp/MainContent/ContactPage/default
+----- id: top.menu; tplName: ThisApp/Top/Menu/default
+2018-03-01 17:10:07 - [debug]: [Kamille.Layout] - Rendering layout sandwich_1c/default
+2018-03-01 17:10:07 - [page.perf]: apache2handler-/bootstrap-contact--0.085--1121336
+2018-03-01 17:10:07 - [debug]: [Core module] - WebApplicationHandler.handle with uri: /theme/bootstrapv4/dist/js/bootstrap.min.js
+2018-03-01 17:10:07 - [debug]: [Core module] - WebApplicationHandler.handle with uri: /theme/bootstrapv4/assets/js/vendor/popper.min.js
+2018-03-01 17:10:07 - [hooks]: [Kamille.Hook] - Core_onSiteConfigured was called
+2018-03-01 17:10:07 - [hooks]: [Kamille.Hook] - Core_onSiteConfigured was called
+2018-03-01 17:10:07 - [hooks]: [Kamille.Hook] - Core_feedAjaxUri2Controllers was called
+2018-03-01 17:10:07 - [hooks]: [Kamille.Hook] - Core_feedAjaxUri2Controllers was called
+2018-03-01 17:10:07 - [hooks]: [Kamille.Hook] - Core_feedEarlyRouter was called
+2018-03-01 17:10:07 - [hooks]: [Kamille.Hook] - Core_feedEarlyRouter was called
+2018-03-01 17:10:07 - [hooks]: [Kamille.Hook] - Core_configureRoutsyRouter was called
+2018-03-01 17:10:07 - [error]: [Core module] - WebApplicationHandler: exception caught with message: 'The controller parameter was not found in the request /theme/bootstrapv4/dist/js/bootstrap.min.js'. uri was /theme/bootstrapv4/dist/js/bootstrap.min.js, redispatching to the fallback loop
+2018-03-01 17:10:07 - [hooks]: [Kamille.Hook] - Core_configureRoutsyRouter was called
+2018-03-01 17:10:07 - [debug]: [Kamille.RouterRequestListener] - Router matched: Module\Core\Architecture\Router\EarlyRouter, controller: Controller\Core\ExceptionController:render
+2018-03-01 17:10:07 - [hooks]: [Kamille.Hook] - Core_Controller_onControllerStringReceived was called
+2018-03-01 17:10:07 - [error]: [Ekom module]: ExceptionController: exception 'Kamille\Architecture\RequestListener\Exception\RequestListenerException' with message 'The controller parameter was not found in the request /theme/bootstrapv4/dist/js/bootstrap.min.js' in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/RequestListener/Web/ControllerExecuterRequestListener.php:58
+Stack trace:
+#0 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/Application/Web/WebApplication.php(132): Kamille\Architecture\RequestListener\Web\ControllerExecuterRequestListener->listen(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#1 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-modules/Core/ApplicationHandler/WebApplicationHandler.php(137): Kamille\Architecture\Application\Web\WebApplication->handleRequest(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#2 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/www/index.php(26): Module\Core\ApplicationHandler\WebApplicationHandler->handle(Object(Kamille\Architecture\Application\Web\WebApplication))
+#3 {main}
+2018-03-01 17:10:07 - [error]: [Core module] - WebApplicationHandler: exception caught with message: 'The controller parameter was not found in the request /theme/bootstrapv4/assets/js/vendor/popper.min.js'. uri was /theme/bootstrapv4/assets/js/vendor/popper.min.js, redispatching to the fallback loop
+2018-03-01 17:10:07 - [debug]: [Core module] - LawsViewRenderer.renderByViewId with viewId Core/exception
+2018-03-01 17:10:07 - [debug]: [Kamille.RouterRequestListener] - Router matched: Module\Core\Architecture\Router\EarlyRouter, controller: Controller\Core\ExceptionController:render
+2018-03-01 17:10:07 - [hooks]: [Kamille.Hook] - Core_Controller_onControllerStringReceived was called
+2018-03-01 17:10:07 - [hooks]: [Kamille.Hook] - Core_autoLawsConfig was called
+2018-03-01 17:10:07 - [hooks]: [Kamille.Hook] - Core_lazyJsInit_addCodeWrapper was called
+2018-03-01 17:10:07 - [error]: [Ekom module]: ExceptionController: exception 'Kamille\Architecture\RequestListener\Exception\RequestListenerException' with message 'The controller parameter was not found in the request /theme/bootstrapv4/assets/js/vendor/popper.min.js' in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/RequestListener/Web/ControllerExecuterRequestListener.php:58
+Stack trace:
+#0 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/Application/Web/WebApplication.php(132): Kamille\Architecture\RequestListener\Web\ControllerExecuterRequestListener->listen(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#1 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-modules/Core/ApplicationHandler/WebApplicationHandler.php(137): Kamille\Architecture\Application\Web\WebApplication->handleRequest(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#2 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/www/index.php(26): Module\Core\ApplicationHandler\WebApplicationHandler->handle(Object(Kamille\Architecture\Application\Web\WebApplication))
+#3 {main}
+2018-03-01 17:10:07 - [debug]: [Core module] - LawsViewRenderer.renderByViewId with viewId Core/exception
+2018-03-01 17:10:07 - [hooks]: [Kamille.Hook] - Core_addLawsUtilProxyDecorators was called
+2018-03-01 17:10:07 - [hooks]: [Kamille.Hook] - Core_autoLawsConfig was called
+2018-03-01 17:10:07 - [hooks]: [Kamille.Hook] - Core_lazyJsInit_addCodeWrapper was called
+2018-03-01 17:10:07 - [hooks]: [Kamille.Hook] - Core_configureLawsUtil was called
+2018-03-01 17:10:07 - [hooks]: [Kamille.Hook] - Core_addLawsUtilProxyDecorators was called
+2018-03-01 17:10:07 - [trace]: [Kamille.LawsUtil] - trace with theme: bootstrapv4, viewId: Core/exception (/config/laws/Core/exception.conf.php):
+- layout: splash/default
+- widgets: 
+----- id: main.exception; tplName: Core/Exception/default
+2018-03-01 17:10:07 - [hooks]: [Kamille.Hook] - Core_configureLawsUtil was called
+2018-03-01 17:10:07 - [debug]: [Kamille.Layout] - Rendering layout splash/default
+2018-03-01 17:10:07 - [trace]: [Kamille.LawsUtil] - trace with theme: bootstrapv4, viewId: Core/exception (/config/laws/Core/exception.conf.php):
+- layout: splash/default
+- widgets: 
+----- id: main.exception; tplName: Core/Exception/default
+2018-03-01 17:10:07 - [page.perf]: apache2handler-/theme/bootstrapv4/dist/js/bootstrap.min.js--0.043--1176496
+2018-03-01 17:10:07 - [debug]: [Kamille.Layout] - Rendering layout splash/default
+2018-03-01 17:10:07 - [page.perf]: apache2handler-/theme/bootstrapv4/assets/js/vendor/popper.min.js--0.053--1176456
+2018-03-01 17:10:16 - [debug]: [Core module] - WebApplicationHandler.handle with uri: /bootstrap-contact
+2018-03-01 17:10:16 - [hooks]: [Kamille.Hook] - Core_onSiteConfigured was called
+2018-03-01 17:10:16 - [hooks]: [Kamille.Hook] - Core_feedAjaxUri2Controllers was called
+2018-03-01 17:10:16 - [hooks]: [Kamille.Hook] - Core_feedEarlyRouter was called
+2018-03-01 17:10:16 - [hooks]: [Kamille.Hook] - Core_configureRoutsyRouter was called
+2018-03-01 17:10:16 - [debug]: [Kamille.RoutsyRouter] - routeId MyApp_bootstrap_contact matched; fileName: routes; pattern: /bootstrap-contact
+2018-03-01 17:10:16 - [debug]: [Kamille.RouterRequestListener] - Router matched: Kamille\Utils\Routsy\RoutsyRouter, controller: Controller\ThisApp\Bootstrap\ThreePages\ContactPageController:render
+2018-03-01 17:10:16 - [hooks]: [Kamille.Hook] - Core_Controller_onControllerStringReceived was called
+2018-03-01 17:10:16 - [trace]: [Kamille] - ClawsRenderer: trace with theme: bootstrapv4
+- layout: sandwich_1c/default
+- widgets: 
+----- id: maincontent.body; tplName: ThisApp/MainContent/ContactPage/default
+----- id: top.menu; tplName: ThisApp/Top/Menu/default
+2018-03-01 17:10:16 - [debug]: [Kamille.Layout] - Rendering layout sandwich_1c/default
+2018-03-01 17:10:16 - [page.perf]: apache2handler-/bootstrap-contact--0.059--1121336
+2018-03-01 17:10:16 - [debug]: [Core module] - WebApplicationHandler.handle with uri: /theme/bootstrapv4/assets/js/vendor/popper.min.js
+2018-03-01 17:10:16 - [debug]: [Core module] - WebApplicationHandler.handle with uri: /theme/bootstrapv4/dist/js/bootstrap.min.js
+2018-03-01 17:10:16 - [hooks]: [Kamille.Hook] - Core_onSiteConfigured was called
+2018-03-01 17:10:16 - [hooks]: [Kamille.Hook] - Core_feedAjaxUri2Controllers was called
+2018-03-01 17:10:16 - [hooks]: [Kamille.Hook] - Core_feedEarlyRouter was called
+2018-03-01 17:10:16 - [hooks]: [Kamille.Hook] - Core_onSiteConfigured was called
+2018-03-01 17:10:16 - [hooks]: [Kamille.Hook] - Core_feedAjaxUri2Controllers was called
+2018-03-01 17:10:16 - [hooks]: [Kamille.Hook] - Core_feedEarlyRouter was called
+2018-03-01 17:10:16 - [hooks]: [Kamille.Hook] - Core_configureRoutsyRouter was called
+2018-03-01 17:10:16 - [hooks]: [Kamille.Hook] - Core_configureRoutsyRouter was called
+2018-03-01 17:10:16 - [error]: [Core module] - WebApplicationHandler: exception caught with message: 'The controller parameter was not found in the request /theme/bootstrapv4/assets/js/vendor/popper.min.js'. uri was /theme/bootstrapv4/assets/js/vendor/popper.min.js, redispatching to the fallback loop
+2018-03-01 17:10:16 - [debug]: [Kamille.RouterRequestListener] - Router matched: Module\Core\Architecture\Router\EarlyRouter, controller: Controller\Core\ExceptionController:render
+2018-03-01 17:10:16 - [hooks]: [Kamille.Hook] - Core_Controller_onControllerStringReceived was called
+2018-03-01 17:10:16 - [error]: [Core module] - WebApplicationHandler: exception caught with message: 'The controller parameter was not found in the request /theme/bootstrapv4/dist/js/bootstrap.min.js'. uri was /theme/bootstrapv4/dist/js/bootstrap.min.js, redispatching to the fallback loop
+2018-03-01 17:10:16 - [debug]: [Kamille.RouterRequestListener] - Router matched: Module\Core\Architecture\Router\EarlyRouter, controller: Controller\Core\ExceptionController:render
+2018-03-01 17:10:16 - [hooks]: [Kamille.Hook] - Core_Controller_onControllerStringReceived was called
+2018-03-01 17:10:16 - [error]: [Ekom module]: ExceptionController: exception 'Kamille\Architecture\RequestListener\Exception\RequestListenerException' with message 'The controller parameter was not found in the request /theme/bootstrapv4/assets/js/vendor/popper.min.js' in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/RequestListener/Web/ControllerExecuterRequestListener.php:58
+Stack trace:
+#0 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/Application/Web/WebApplication.php(132): Kamille\Architecture\RequestListener\Web\ControllerExecuterRequestListener->listen(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#1 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-modules/Core/ApplicationHandler/WebApplicationHandler.php(137): Kamille\Architecture\Application\Web\WebApplication->handleRequest(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#2 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/www/index.php(26): Module\Core\ApplicationHandler\WebApplicationHandler->handle(Object(Kamille\Architecture\Application\Web\WebApplication))
+#3 {main}
+2018-03-01 17:10:16 - [error]: [Ekom module]: ExceptionController: exception 'Kamille\Architecture\RequestListener\Exception\RequestListenerException' with message 'The controller parameter was not found in the request /theme/bootstrapv4/dist/js/bootstrap.min.js' in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/RequestListener/Web/ControllerExecuterRequestListener.php:58
+Stack trace:
+#0 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/Application/Web/WebApplication.php(132): Kamille\Architecture\RequestListener\Web\ControllerExecuterRequestListener->listen(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#1 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-modules/Core/ApplicationHandler/WebApplicationHandler.php(137): Kamille\Architecture\Application\Web\WebApplication->handleRequest(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#2 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/www/index.php(26): Module\Core\ApplicationHandler\WebApplicationHandler->handle(Object(Kamille\Architecture\Application\Web\WebApplication))
+#3 {main}
+2018-03-01 17:10:16 - [debug]: [Core module] - LawsViewRenderer.renderByViewId with viewId Core/exception
+2018-03-01 17:10:16 - [hooks]: [Kamille.Hook] - Core_autoLawsConfig was called
+2018-03-01 17:10:16 - [debug]: [Core module] - LawsViewRenderer.renderByViewId with viewId Core/exception
+2018-03-01 17:10:16 - [hooks]: [Kamille.Hook] - Core_autoLawsConfig was called
+2018-03-01 17:10:16 - [hooks]: [Kamille.Hook] - Core_lazyJsInit_addCodeWrapper was called
+2018-03-01 17:10:16 - [hooks]: [Kamille.Hook] - Core_lazyJsInit_addCodeWrapper was called
+2018-03-01 17:10:16 - [hooks]: [Kamille.Hook] - Core_addLawsUtilProxyDecorators was called
+2018-03-01 17:10:16 - [hooks]: [Kamille.Hook] - Core_addLawsUtilProxyDecorators was called
+2018-03-01 17:10:16 - [hooks]: [Kamille.Hook] - Core_configureLawsUtil was called
+2018-03-01 17:10:16 - [hooks]: [Kamille.Hook] - Core_configureLawsUtil was called
+2018-03-01 17:10:16 - [trace]: [Kamille.LawsUtil] - trace with theme: bootstrapv4, viewId: Core/exception (/config/laws/Core/exception.conf.php):
+- layout: splash/default
+- widgets: 
+----- id: main.exception; tplName: Core/Exception/default
+2018-03-01 17:10:16 - [trace]: [Kamille.LawsUtil] - trace with theme: bootstrapv4, viewId: Core/exception (/config/laws/Core/exception.conf.php):
+- layout: splash/default
+- widgets: 
+----- id: main.exception; tplName: Core/Exception/default
+2018-03-01 17:10:16 - [debug]: [Kamille.Layout] - Rendering layout splash/default
+2018-03-01 17:10:16 - [debug]: [Kamille.Layout] - Rendering layout splash/default
+2018-03-01 17:10:16 - [page.perf]: apache2handler-/theme/bootstrapv4/assets/js/vendor/popper.min.js--0.058--1176456
+2018-03-01 17:10:16 - [page.perf]: apache2handler-/theme/bootstrapv4/dist/js/bootstrap.min.js--0.057--1176496
+2018-03-01 17:10:21 - [debug]: [Core module] - WebApplicationHandler.handle with uri: /bootstrap-contact
+2018-03-01 17:10:21 - [hooks]: [Kamille.Hook] - Core_onSiteConfigured was called
+2018-03-01 17:10:21 - [hooks]: [Kamille.Hook] - Core_feedAjaxUri2Controllers was called
+2018-03-01 17:10:21 - [hooks]: [Kamille.Hook] - Core_feedEarlyRouter was called
+2018-03-01 17:10:21 - [hooks]: [Kamille.Hook] - Core_configureRoutsyRouter was called
+2018-03-01 17:10:21 - [debug]: [Kamille.RoutsyRouter] - routeId MyApp_bootstrap_contact matched; fileName: routes; pattern: /bootstrap-contact
+2018-03-01 17:10:21 - [debug]: [Kamille.RouterRequestListener] - Router matched: Kamille\Utils\Routsy\RoutsyRouter, controller: Controller\ThisApp\Bootstrap\ThreePages\ContactPageController:render
+2018-03-01 17:10:21 - [hooks]: [Kamille.Hook] - Core_Controller_onControllerStringReceived was called
+2018-03-01 17:10:21 - [trace]: [Kamille] - ClawsRenderer: trace with theme: bootstrapv4
+- layout: sandwich_1c/default
+- widgets: 
+----- id: maincontent.body; tplName: ThisApp/MainContent/ContactPage/default
+----- id: top.menu; tplName: ThisApp/Top/Menu/default
+2018-03-01 17:10:21 - [debug]: [Kamille.Layout] - Rendering layout sandwich_1c/default
+2018-03-01 17:10:21 - [page.perf]: apache2handler-/bootstrap-contact--0.063--1121336
+2018-03-01 17:10:21 - [debug]: [Core module] - WebApplicationHandler.handle with uri: /theme/bootstrapv4/assets/js/vendor/popper.min.js
+2018-03-01 17:10:21 - [debug]: [Core module] - WebApplicationHandler.handle with uri: /theme/bootstrapv4/dist/js/bootstrap.min.js
+2018-03-01 17:10:21 - [hooks]: [Kamille.Hook] - Core_onSiteConfigured was called
+2018-03-01 17:10:21 - [hooks]: [Kamille.Hook] - Core_onSiteConfigured was called
+2018-03-01 17:10:21 - [hooks]: [Kamille.Hook] - Core_feedAjaxUri2Controllers was called
+2018-03-01 17:10:21 - [hooks]: [Kamille.Hook] - Core_feedAjaxUri2Controllers was called
+2018-03-01 17:10:21 - [hooks]: [Kamille.Hook] - Core_feedEarlyRouter was called
+2018-03-01 17:10:21 - [hooks]: [Kamille.Hook] - Core_feedEarlyRouter was called
+2018-03-01 17:10:21 - [hooks]: [Kamille.Hook] - Core_configureRoutsyRouter was called
+2018-03-01 17:10:21 - [hooks]: [Kamille.Hook] - Core_configureRoutsyRouter was called
+2018-03-01 17:10:21 - [error]: [Core module] - WebApplicationHandler: exception caught with message: 'The controller parameter was not found in the request /theme/bootstrapv4/dist/js/bootstrap.min.js'. uri was /theme/bootstrapv4/dist/js/bootstrap.min.js, redispatching to the fallback loop
+2018-03-01 17:10:21 - [debug]: [Kamille.RouterRequestListener] - Router matched: Module\Core\Architecture\Router\EarlyRouter, controller: Controller\Core\ExceptionController:render
+2018-03-01 17:10:21 - [hooks]: [Kamille.Hook] - Core_Controller_onControllerStringReceived was called
+2018-03-01 17:10:21 - [error]: [Ekom module]: ExceptionController: exception 'Kamille\Architecture\RequestListener\Exception\RequestListenerException' with message 'The controller parameter was not found in the request /theme/bootstrapv4/dist/js/bootstrap.min.js' in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/RequestListener/Web/ControllerExecuterRequestListener.php:58
+Stack trace:
+#0 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/Application/Web/WebApplication.php(132): Kamille\Architecture\RequestListener\Web\ControllerExecuterRequestListener->listen(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#1 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-modules/Core/ApplicationHandler/WebApplicationHandler.php(137): Kamille\Architecture\Application\Web\WebApplication->handleRequest(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#2 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/www/index.php(26): Module\Core\ApplicationHandler\WebApplicationHandler->handle(Object(Kamille\Architecture\Application\Web\WebApplication))
+#3 {main}
+2018-03-01 17:10:21 - [error]: [Core module] - WebApplicationHandler: exception caught with message: 'The controller parameter was not found in the request /theme/bootstrapv4/assets/js/vendor/popper.min.js'. uri was /theme/bootstrapv4/assets/js/vendor/popper.min.js, redispatching to the fallback loop
+2018-03-01 17:10:21 - [debug]: [Core module] - LawsViewRenderer.renderByViewId with viewId Core/exception
+2018-03-01 17:10:21 - [debug]: [Kamille.RouterRequestListener] - Router matched: Module\Core\Architecture\Router\EarlyRouter, controller: Controller\Core\ExceptionController:render
+2018-03-01 17:10:21 - [hooks]: [Kamille.Hook] - Core_Controller_onControllerStringReceived was called
+2018-03-01 17:10:21 - [hooks]: [Kamille.Hook] - Core_autoLawsConfig was called
+2018-03-01 17:10:21 - [hooks]: [Kamille.Hook] - Core_lazyJsInit_addCodeWrapper was called
+2018-03-01 17:10:21 - [error]: [Ekom module]: ExceptionController: exception 'Kamille\Architecture\RequestListener\Exception\RequestListenerException' with message 'The controller parameter was not found in the request /theme/bootstrapv4/assets/js/vendor/popper.min.js' in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/RequestListener/Web/ControllerExecuterRequestListener.php:58
+Stack trace:
+#0 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/Application/Web/WebApplication.php(132): Kamille\Architecture\RequestListener\Web\ControllerExecuterRequestListener->listen(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#1 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-modules/Core/ApplicationHandler/WebApplicationHandler.php(137): Kamille\Architecture\Application\Web\WebApplication->handleRequest(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#2 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/www/index.php(26): Module\Core\ApplicationHandler\WebApplicationHandler->handle(Object(Kamille\Architecture\Application\Web\WebApplication))
+#3 {main}
+2018-03-01 17:10:21 - [hooks]: [Kamille.Hook] - Core_addLawsUtilProxyDecorators was called
+2018-03-01 17:10:21 - [debug]: [Core module] - LawsViewRenderer.renderByViewId with viewId Core/exception
+2018-03-01 17:10:21 - [hooks]: [Kamille.Hook] - Core_autoLawsConfig was called
+2018-03-01 17:10:21 - [hooks]: [Kamille.Hook] - Core_lazyJsInit_addCodeWrapper was called
+2018-03-01 17:10:21 - [hooks]: [Kamille.Hook] - Core_addLawsUtilProxyDecorators was called
+2018-03-01 17:10:21 - [hooks]: [Kamille.Hook] - Core_configureLawsUtil was called
+2018-03-01 17:10:21 - [trace]: [Kamille.LawsUtil] - trace with theme: bootstrapv4, viewId: Core/exception (/config/laws/Core/exception.conf.php):
+- layout: splash/default
+- widgets: 
+----- id: main.exception; tplName: Core/Exception/default
+2018-03-01 17:10:21 - [hooks]: [Kamille.Hook] - Core_configureLawsUtil was called
+2018-03-01 17:10:21 - [trace]: [Kamille.LawsUtil] - trace with theme: bootstrapv4, viewId: Core/exception (/config/laws/Core/exception.conf.php):
+- layout: splash/default
+- widgets: 
+----- id: main.exception; tplName: Core/Exception/default
+2018-03-01 17:10:21 - [debug]: [Kamille.Layout] - Rendering layout splash/default
+2018-03-01 17:10:21 - [debug]: [Kamille.Layout] - Rendering layout splash/default
+2018-03-01 17:10:21 - [page.perf]: apache2handler-/theme/bootstrapv4/assets/js/vendor/popper.min.js--0.070--1176456
+2018-03-01 17:10:21 - [page.perf]: apache2handler-/theme/bootstrapv4/dist/js/bootstrap.min.js--0.070--1176496
+2018-03-01 17:10:27 - [debug]: [Core module] - WebApplicationHandler.handle with uri: /bootstrap-contact
+2018-03-01 17:10:27 - [hooks]: [Kamille.Hook] - Core_onSiteConfigured was called
+2018-03-01 17:10:27 - [hooks]: [Kamille.Hook] - Core_feedAjaxUri2Controllers was called
+2018-03-01 17:10:27 - [hooks]: [Kamille.Hook] - Core_feedEarlyRouter was called
+2018-03-01 17:10:27 - [hooks]: [Kamille.Hook] - Core_configureRoutsyRouter was called
+2018-03-01 17:10:27 - [debug]: [Kamille.RoutsyRouter] - routeId MyApp_bootstrap_contact matched; fileName: routes; pattern: /bootstrap-contact
+2018-03-01 17:10:27 - [debug]: [Kamille.RouterRequestListener] - Router matched: Kamille\Utils\Routsy\RoutsyRouter, controller: Controller\ThisApp\Bootstrap\ThreePages\ContactPageController:render
+2018-03-01 17:10:27 - [hooks]: [Kamille.Hook] - Core_Controller_onControllerStringReceived was called
+2018-03-01 17:10:27 - [trace]: [Kamille] - ClawsRenderer: trace with theme: bootstrapv4
+- layout: sandwich_1c/default
+- widgets: 
+----- id: maincontent.body; tplName: ThisApp/MainContent/ContactPage/default
+----- id: top.menu; tplName: ThisApp/Top/Menu/default
+2018-03-01 17:10:27 - [debug]: [Kamille.Layout] - Rendering layout sandwich_1c/default
+2018-03-01 17:10:27 - [page.perf]: apache2handler-/bootstrap-contact--0.064--1121320
+2018-03-01 17:10:27 - [debug]: [Core module] - WebApplicationHandler.handle with uri: /theme/bootstrapv4/dist/js/bootstrap.min.js
+2018-03-01 17:10:27 - [debug]: [Core module] - WebApplicationHandler.handle with uri: /theme/bootstrapv4/assets/js/vendor/popper.min.js
+2018-03-01 17:10:27 - [hooks]: [Kamille.Hook] - Core_onSiteConfigured was called
+2018-03-01 17:10:27 - [hooks]: [Kamille.Hook] - Core_feedAjaxUri2Controllers was called
+2018-03-01 17:10:27 - [hooks]: [Kamille.Hook] - Core_feedEarlyRouter was called
+2018-03-01 17:10:27 - [hooks]: [Kamille.Hook] - Core_onSiteConfigured was called
+2018-03-01 17:10:27 - [hooks]: [Kamille.Hook] - Core_feedAjaxUri2Controllers was called
+2018-03-01 17:10:27 - [hooks]: [Kamille.Hook] - Core_feedEarlyRouter was called
+2018-03-01 17:10:27 - [hooks]: [Kamille.Hook] - Core_configureRoutsyRouter was called
+2018-03-01 17:10:27 - [error]: [Core module] - WebApplicationHandler: exception caught with message: 'The controller parameter was not found in the request /theme/bootstrapv4/dist/js/bootstrap.min.js'. uri was /theme/bootstrapv4/dist/js/bootstrap.min.js, redispatching to the fallback loop
+2018-03-01 17:10:27 - [debug]: [Kamille.RouterRequestListener] - Router matched: Module\Core\Architecture\Router\EarlyRouter, controller: Controller\Core\ExceptionController:render
+2018-03-01 17:10:27 - [hooks]: [Kamille.Hook] - Core_Controller_onControllerStringReceived was called
+2018-03-01 17:10:27 - [hooks]: [Kamille.Hook] - Core_configureRoutsyRouter was called
+2018-03-01 17:10:27 - [error]: [Ekom module]: ExceptionController: exception 'Kamille\Architecture\RequestListener\Exception\RequestListenerException' with message 'The controller parameter was not found in the request /theme/bootstrapv4/dist/js/bootstrap.min.js' in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/RequestListener/Web/ControllerExecuterRequestListener.php:58
+Stack trace:
+#0 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/Application/Web/WebApplication.php(132): Kamille\Architecture\RequestListener\Web\ControllerExecuterRequestListener->listen(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#1 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-modules/Core/ApplicationHandler/WebApplicationHandler.php(137): Kamille\Architecture\Application\Web\WebApplication->handleRequest(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#2 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/www/index.php(26): Module\Core\ApplicationHandler\WebApplicationHandler->handle(Object(Kamille\Architecture\Application\Web\WebApplication))
+#3 {main}
+2018-03-01 17:10:27 - [debug]: [Core module] - LawsViewRenderer.renderByViewId with viewId Core/exception
+2018-03-01 17:10:27 - [hooks]: [Kamille.Hook] - Core_autoLawsConfig was called
+2018-03-01 17:10:27 - [error]: [Core module] - WebApplicationHandler: exception caught with message: 'The controller parameter was not found in the request /theme/bootstrapv4/assets/js/vendor/popper.min.js'. uri was /theme/bootstrapv4/assets/js/vendor/popper.min.js, redispatching to the fallback loop
+2018-03-01 17:10:27 - [hooks]: [Kamille.Hook] - Core_lazyJsInit_addCodeWrapper was called
+2018-03-01 17:10:27 - [debug]: [Kamille.RouterRequestListener] - Router matched: Module\Core\Architecture\Router\EarlyRouter, controller: Controller\Core\ExceptionController:render
+2018-03-01 17:10:27 - [hooks]: [Kamille.Hook] - Core_Controller_onControllerStringReceived was called
+2018-03-01 17:10:27 - [hooks]: [Kamille.Hook] - Core_addLawsUtilProxyDecorators was called
+2018-03-01 17:10:27 - [error]: [Ekom module]: ExceptionController: exception 'Kamille\Architecture\RequestListener\Exception\RequestListenerException' with message 'The controller parameter was not found in the request /theme/bootstrapv4/assets/js/vendor/popper.min.js' in /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/RequestListener/Web/ControllerExecuterRequestListener.php:58
+Stack trace:
+#0 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/planets/Kamille/Architecture/Application/Web/WebApplication.php(132): Kamille\Architecture\RequestListener\Web\ControllerExecuterRequestListener->listen(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#1 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/class-modules/Core/ApplicationHandler/WebApplicationHandler.php(137): Kamille\Architecture\Application\Web\WebApplication->handleRequest(Object(Kamille\Architecture\Request\Web\HttpRequest))
+#2 /Volumes/Macintosh HD 2/web/php/projects/kamille-app/www/index.php(26): Module\Core\ApplicationHandler\WebApplicationHandler->handle(Object(Kamille\Architecture\Application\Web\WebApplication))
+#3 {main}
+2018-03-01 17:10:27 - [debug]: [Core module] - LawsViewRenderer.renderByViewId with viewId Core/exception
+2018-03-01 17:10:27 - [hooks]: [Kamille.Hook] - Core_autoLawsConfig was called
+2018-03-01 17:10:27 - [hooks]: [Kamille.Hook] - Core_configureLawsUtil was called
+2018-03-01 17:10:27 - [hooks]: [Kamille.Hook] - Core_lazyJsInit_addCodeWrapper was called
+2018-03-01 17:10:27 - [trace]: [Kamille.LawsUtil] - trace with theme: bootstrapv4, viewId: Core/exception (/config/laws/Core/exception.conf.php):
+- layout: splash/default
+- widgets: 
+----- id: main.exception; tplName: Core/Exception/default
+2018-03-01 17:10:27 - [debug]: [Kamille.Layout] - Rendering layout splash/default
+2018-03-01 17:10:27 - [hooks]: [Kamille.Hook] - Core_addLawsUtilProxyDecorators was called
+2018-03-01 17:10:27 - [hooks]: [Kamille.Hook] - Core_configureLawsUtil was called
+2018-03-01 17:10:27 - [trace]: [Kamille.LawsUtil] - trace with theme: bootstrapv4, viewId: Core/exception (/config/laws/Core/exception.conf.php):
+- layout: splash/default
+- widgets: 
+----- id: main.exception; tplName: Core/Exception/default
+2018-03-01 17:10:27 - [page.perf]: apache2handler-/theme/bootstrapv4/dist/js/bootstrap.min.js--0.057--1176496
+2018-03-01 17:10:27 - [debug]: [Kamille.Layout] - Rendering layout splash/default
+2018-03-01 17:10:27 - [page.perf]: apache2handler-/theme/bootstrapv4/assets/js/vendor/popper.min.js--0.059--1176456

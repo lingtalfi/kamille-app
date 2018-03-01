@@ -6,6 +6,7 @@ namespace Controller\ThisApp\Bootstrap\ThreePages;
 
 use Controller\ThisApp\Bootstrap\ThreePagesController;
 use Kamille\Utils\Claws\ClawsWidget;
+use Module\ThisApp\Model\Form\ContactForm;
 
 class ContactPageController extends ThreePagesController
 {
@@ -14,15 +15,12 @@ class ContactPageController extends ThreePagesController
     {
 
 
-
-
-
-
-
         $this->getClaws()
             ->setWidget("maincontent.body", ClawsWidget::create()
                 ->setTemplate('ThisApp/MainContent/ContactPage/default')
-                ->setConf([])
+                ->setConf([
+                    "form" => ContactForm::getModel(),
+                ])
             );
 
 
