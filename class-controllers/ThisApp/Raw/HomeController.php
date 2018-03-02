@@ -12,7 +12,7 @@ class HomeController extends ApplicationController
 
     public function render()
     {
-        return HttpResponse::create("Hey, this is your new app.");
+        return HttpResponse::create("hello world");
     }
 
 }

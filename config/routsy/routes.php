@@ -1,7 +1,5 @@
 <?php
 
-use Kamille\Architecture\Request\Web\HttpRequestInterface;
-
 //--------------------------------------------
 // USER - BEFORE
 //--------------------------------------------
