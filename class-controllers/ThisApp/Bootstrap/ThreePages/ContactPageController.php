@@ -19,7 +19,7 @@ class ContactPageController extends ThreePagesController
             ->setWidget("maincontent.body", ClawsWidget::create()
                 ->setTemplate('ThisApp/MainContent/ContactPage/default')
                 ->setConf([
-                    "form" => ContactForm::getModel(),
+                    "form" => ContactForm::getModel(ContactForm::onFormSuccess()),
                 ])
             );
 
